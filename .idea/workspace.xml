@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="261c9aab-9c86-4cc2-bb88-b6306721daf5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/SpringNotes/src/test/java/com/qa/AppTest.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/SpringNotes" />
+  </component>
+  <component name="ProjectId" id="1bRGwIDXg8Gz2qmKiYiKiPR2tuc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/HWA/src/test/java" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="MTCustomThemeConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dan\intellij-workspace\HWA\src\main\resources\static" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\dan\intellij-workspace\HWA\src\test\java" />
+      <recent name="C:\Users\dan\intellij-workspace\HWA\src\main\resources" />
+      <recent name="C:\Users\dan\intellij-workspace\HWA\src\main\java\com\qa\service" />
+      <recent name="C:\Users\dan\intellij-workspace\HWA\src\main\java\com\qa\rest" />
+      <recent name="C:\Users\dan\intellij-workspace\HWA\src\main\java\com\qa\repository" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="261c9aab-9c86-4cc2-bb88-b6306721daf5" name="Default Changelist" comment="" />
+      <created>1588587729858</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588587729858</updated>
+      <workItem from="1588587737029" duration="3739000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="690" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1588588616452">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588588616452" />
+    <state x="585" y="1" key="CommitChangelistDialog2" timestamp="1588589379265">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="585" y="1" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588589379265" />
+  </component>
+</project>
