@@ -28,24 +28,24 @@ public class CardController {
         return this.service.createCard(card);
     }
 
-    @DeleteMapping("/deleteCard/{id}")
-    public boolean deleteCard(@PathVariable Long id){
-        return this.service.deleteCard(id);
+    @DeleteMapping("/deleteCard/{cardId}")
+    public boolean deleteCard(@PathVariable Long cardId){
+        return this.service.deleteCard(cardId);
     }
 
-    @GetMapping("/getCardById/{id}")
-    public Card getCardById(@PathVariable Long id){
-        return this.service.findCardById(id);
+    @GetMapping("/getCardById/{cardId}")
+    public Card getCardById(@PathVariable Long cardId){
+        return this.service.findCardById(cardId);
     }
 
-    @PutMapping("/updateCard/{id}")
-    public Card updateCard(@PathVariable Long id, @RequestBody Card card){
-        return this.service.updateCard(id, card);
+    @PutMapping("/updateCard/{cardId}")
+    public Card updateCard(@PathVariable Long cardId, @RequestBody Card card){
+        return this.service.updateCard(cardId, card);
     }
 
     @PutMapping("/updateCard2")
-    public Card updateCard2(@PathParam("id") Long id, @RequestBody Card card){
-        return this.service.updateCard(id, card);
+    public Card updateCard2(@PathParam("cardId") Long cardId, @RequestBody Card card){
+        return this.service.updateCard(cardId, card);
     }
 
 }
