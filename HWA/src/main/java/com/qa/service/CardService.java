@@ -26,23 +26,23 @@ public class CardService {
         return this.repo.save(card);
     }
 
-    public Card findCardById(Long id){
-        return this.repo.findById(id).orElseThrow(CardNotFoundException::new);
+    public Card findCardById(Long cardId){
+        return this.repo.findById(cardId).orElseThrow(CardNotFoundException::new);
     }
 
-    public Card updateCard(Long id, Card card){
-        Card update = findCardById(id);
+    public Card updateCard(Long cardId, Card card){
+        Card update = findCardById(cardId);
         update.setCardName(card.getCardName());
         update.setRarity(card.getRarity());
         return this.repo.save(update);
     }
 
-    public boolean deleteCard(Long id){
-        if(!this.repo.existsById(id)){
+    public boolean deleteCard(Long cardId){
+        if(!this.repo.existsById(cardId)){
             throw new CardNotFoundException();
         }
-        this.repo.deleteById(id);
-        return this.repo.existsById(id);
+        this.repo.deleteById(cardId);
+        return this.repo.existsById(cardId);
     }
 
 
