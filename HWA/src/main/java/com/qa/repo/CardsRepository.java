@@ -7,6 +7,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface CardsRepository extends JpaRepository<Card, Long> {
 
-    Note findByTitle(String title);
+    Card findByTitle(String title);
 
 }

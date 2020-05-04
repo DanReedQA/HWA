@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.NoSuchElementException;
 
 @Service
 public class CardService {
@@ -33,8 +32,8 @@ public class CardService {
 
     public Card updateCard(Long id, Card card){
         Card update = findCardById(id);
-        update.setTitle(card.getTitle());
-        update.setDescription(card.getDescription());
+        update.setCard_name(card.getCard_name());
+        update.setRarity(card.getRarity());
         return this.repo.save(update);
     }
 

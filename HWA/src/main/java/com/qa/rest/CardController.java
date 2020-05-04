@@ -25,7 +25,7 @@ public class CardController {
 
     @PostMapping("/createCard")
     public Card createCard(@RequestBody Card card){
-        return this.service.createNote(card);
+        return this.service.createCard(card);
     }
 
     @DeleteMapping("/deleteCard/{id}")

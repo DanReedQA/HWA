@@ -11,47 +11,58 @@ public class Card {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
-    private String title;
-    private String description;
+    private Long card_id;
+    private String card_name;
+    private String rarity;
+    private Long stock;
+    private Long value;
 
-    public Long getId() {
-        return id;
+    public Long getCard_id() {
+        return card_id;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setCard_id(Long id) {
+        this.card_id = id;
     }
 
-    public String getTitle() {
-        return title;
+    public String getCard_name() {
+        return card_name;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setCard_name(String title) {
+        this.card_name = title;
     }
 
-    public String getDescription() {
-        return description;
+    public String getRarity() {
+        return rarity;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setRarity(String description) {
+        this.rarity = description;
     }
+
+    public Long getStock() { return stock; }
+
+    public void setStock(Long stock) { this.stock = stock; }
+
+    public Long getValue() { return value; }
+
+    public void setValue(Long value) { this.value = value; }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (!(o instanceof Card)) return false;
         Card card = (Card) o;
-        return id.equals(card.id) &&
-                title.equals(card.title) &&
-                description.equals(card.description);
+        return getCard_id().equals(card.getCard_id()) &&
+                getCard_name().equals(card.getCard_name()) &&
+                getRarity().equals(card.getRarity()) &&
+                getStock().equals(card.getStock()) &&
+                getValue().equals(card.getValue());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, title, description);
+        return Objects.hash(getCard_id(), getCard_name(), getRarity(), getStock(), getValue());
     }
-
 }
