@@ -32,7 +32,7 @@ public class CardService {
 
     public Card updateCard(Long id, Card card){
         Card update = findCardById(id);
-        update.setCard_name(card.getCard_name());
+        update.setCardName(card.getCardName());
         update.setRarity(card.getRarity());
         return this.repo.save(update);
     }

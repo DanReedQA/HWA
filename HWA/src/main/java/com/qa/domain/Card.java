@@ -11,26 +11,26 @@ public class Card {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long card_id;
-    private String card_name;
+    private Long cardId;
+    private String cardName;
     private String rarity;
     private Long stock;
     private Long value;
 
-    public Long getCard_id() {
-        return card_id;
+    public Long getCardId() {
+        return cardId;
     }
 
-    public void setCard_id(Long id) {
-        this.card_id = id;
+    public void setCardId(Long id) {
+        this.cardId = id;
     }
 
-    public String getCard_name() {
-        return card_name;
+    public String getCardName() {
+        return cardName;
     }
 
-    public void setCard_name(String title) {
-        this.card_name = title;
+    public void setCardName(String title) {
+        this.cardName = title;
     }
 
     public String getRarity() {
@@ -54,8 +54,8 @@ public class Card {
         if (this == o) return true;
         if (!(o instanceof Card)) return false;
         Card card = (Card) o;
-        return getCard_id().equals(card.getCard_id()) &&
-                getCard_name().equals(card.getCard_name()) &&
+        return getCardId().equals(card.getCardId()) &&
+                getCardName().equals(card.getCardName()) &&
                 getRarity().equals(card.getRarity()) &&
                 getStock().equals(card.getStock()) &&
                 getValue().equals(card.getValue());
@@ -63,6 +63,6 @@ public class Card {
 
     @Override
     public int hashCode() {
-        return Objects.hash(getCard_id(), getCard_name(), getRarity(), getStock(), getValue());
+        return Objects.hash(getCardId(), getCardName(), getRarity(), getStock(), getValue());
     }
 }
