@@ -1,39 +1,50 @@
 package com.qa.service;
 
 import com.qa.domain.Box;
+import com.qa.dto.BoxDTO;
 import com.qa.exceptions.BoxNotFoundException;
 import com.qa.repo.BoxesRepository;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class BoxService {
 
     private final BoxesRepository repo;
 
+    private final ModelMapper mapper;
+
     @Autowired
-    public BoxService(BoxesRepository repo) {
+    public BoxService(BoxesRepository repo, ModelMapper mapper) {
         this.repo = repo;
+        this.mapper = mapper;
     }
 
-    public List<Box> readBoxes(){
-        return this.repo.findAll();
+    private BoxDTO mapToDTO(Box box){
+        return this.mapper.map(box, BoxDTO.class);
     }
 
-    public Box createBox(Box box){
-        return this.repo.save(box);
+    public List<BoxDTO> readBoxes(){
+        return this.repo.findAll().stream().map(this::mapToDTO).collect(Collectors.toList());
     }
 
-    public Box findBoxById(Long boxId){
-        return this.repo.findById(boxId).orElseThrow(BoxNotFoundException::new);
+    public BoxDTO createBox(Box box){
+        return this.mapToDTO(this.repo.save(box));
     }
 
-    public Box updateBox(Long boxId, Box box){
-        Box update = findBoxById(boxId);
+    public BoxDTO findBoxById(Long boxId){
+        return this.mapToDTO(this.repo.findById(boxId).orElseThrow(BoxNotFoundException::new));
+    }
+
+    public BoxDTO updateBox(Long boxId, Box box){
+        Box update = this.repo.findById(boxId).orElseThrow(BoxNotFoundException::new);
         update.setBoxName(box.getBoxName());
-        return this.repo.save(update);
+        Box tempBox = this.repo.save(update);
+        return this.mapToDTO(tempBox);
     }
 
     public boolean deleteBox(Long boxId){
