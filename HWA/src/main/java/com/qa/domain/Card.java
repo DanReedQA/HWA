@@ -21,44 +21,52 @@ public class Card {
         return cardId;
     }
 
-    public void setCardId(Long id) {
-        this.cardId = id;
+    public void setCardId(Long cardId) {
+        this.cardId = cardId;
     }
 
     public String getCardName() {
         return cardName;
     }
 
-    public void setCardName(String title) {
-        this.cardName = title;
+    public void setCardName(String cardName) {
+        this.cardName = cardName;
     }
 
     public String getRarity() {
         return rarity;
     }
 
-    public void setRarity(String description) {
-        this.rarity = description;
+    public void setRarity(String rarity) {
+        this.rarity = rarity;
     }
 
-    public Long getStock() { return stock; }
+    public Long getStock() {
+        return stock;
+    }
 
-    public void setStock(Long stock) { this.stock = stock; }
+    public void setStock(Long stock) {
+        this.stock = stock;
+    }
 
-    public Long getValue() { return value; }
+    public Long getValue() {
+        return value;
+    }
 
-    public void setValue(Long value) { this.value = value; }
+    public void setValue(Long value) {
+        this.value = value;
+    }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Card)) return false;
         Card card = (Card) o;
-        return getCardId().equals(card.getCardId()) &&
-                getCardName().equals(card.getCardName()) &&
-                getRarity().equals(card.getRarity()) &&
-                getStock().equals(card.getStock()) &&
-                getValue().equals(card.getValue());
+        return Objects.equals(getCardId(), card.getCardId()) &&
+                Objects.equals(getCardName(), card.getCardName()) &&
+                Objects.equals(getRarity(), card.getRarity()) &&
+                Objects.equals(getStock(), card.getStock()) &&
+                Objects.equals(getValue(), card.getValue());
     }
 
     @Override

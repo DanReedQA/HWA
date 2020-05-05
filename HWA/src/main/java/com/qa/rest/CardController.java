@@ -39,13 +39,9 @@ public class CardController {
     }
 
     @PutMapping("/updateCard/{cardId}")
-    public Card updateCard(@PathVariable Long cardId, @RequestBody Card card){
-        return this.service.updateCard(cardId, card);
-    }
+    public Card updateCard(@PathVariable Long cardId, @RequestBody Card card){ return this.service.updateCard(cardId, card); }
 
     @PutMapping("/updateCard2")
-    public Card updateCard2(@PathParam("cardId") Long cardId, @RequestBody Card card){
-        return this.service.updateCard(cardId, card);
-    }
+    public Card updateCard2(@PathParam("cardId") Long cardId, @RequestBody Card card){ return this.service.updateCard(cardId, card); }
 
 }

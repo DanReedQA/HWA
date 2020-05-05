@@ -34,6 +34,8 @@ public class CardService {
         Card update = findCardById(cardId);
         update.setCardName(card.getCardName());
         update.setRarity(card.getRarity());
+        update.setStock(card.getStock());
+        update.setValue(card.getValue());
         return this.repo.save(update);
     }
 
