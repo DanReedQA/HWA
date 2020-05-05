@@ -3,7 +3,7 @@ package com.qa.domain;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
@@ -16,6 +16,9 @@ public class Card {
     private String rarity;
     private Long stock;
     private Long value;
+
+    @ManyToOne (targetEntity = Box.class)
+    private Box box;
 
     public Long getCardId() {
         return cardId;
@@ -57,6 +60,14 @@ public class Card {
         this.value = value;
     }
 
+    public Box getBox() {
+        return box;
+    }
+
+    public void setBox(Box box) {
+        this.box = box;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -66,11 +77,12 @@ public class Card {
                 Objects.equals(getCardName(), card.getCardName()) &&
                 Objects.equals(getRarity(), card.getRarity()) &&
                 Objects.equals(getStock(), card.getStock()) &&
-                Objects.equals(getValue(), card.getValue());
+                Objects.equals(getValue(), card.getValue()) &&
+                Objects.equals(getBox(), card.getBox());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getCardId(), getCardName(), getRarity(), getStock(), getValue());
+        return Objects.hash(getCardId(), getCardName(), getRarity(), getStock(), getValue(), getBox());
     }
 }

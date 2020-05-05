@@ -1,10 +1,9 @@
 package com.qa.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.Objects;
+import java.util.List;
 
 @Entity
 public class Box {
@@ -17,6 +16,12 @@ public class Box {
 //  private Long totalValue;  < --  To be added later
 //  private Long totalStock;  < --  To be added later
 
+    @OneToMany (mappedBy = "box", fetch = FetchType.LAZY)
+    private List<Card> cards = new ArrayList<>();
+
+    public Box() {
+
+    }
 
     public Long getBoxId() {
         return boxId;
@@ -34,17 +39,26 @@ public class Box {
         this.boxName = boxName;
     }
 
+    public List<Card> getCards() {
+        return cards;
+    }
+
+    public void setCards(List<Card> cards) {
+        this.cards = cards;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Box)) return false;
         Box box = (Box) o;
         return Objects.equals(getBoxId(), box.getBoxId()) &&
-                Objects.equals(getBoxName(), box.getBoxName());
+                Objects.equals(getBoxName(), box.getBoxName()) &&
+                Objects.equals(getCards(), box.getCards());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getBoxId(), getBoxName());
+        return Objects.hash(getBoxId(), getBoxName(), getCards());
     }
 }
