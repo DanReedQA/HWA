@@ -1,8 +1,11 @@
 package com.qa.rest;
 
 import com.qa.domain.Card;
+import com.qa.dto.CardDTO;
 import com.qa.service.CardService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.websocket.server.PathParam;
@@ -19,29 +22,35 @@ public class CardController {
     }
 
     @GetMapping("/getAllCards")
-    public List<Card> getAllCards(){
-        return this.service.readCards();
+    public ResponseEntity<List<CardDTO>> getAllCards() {
+        return ResponseEntity.ok(this.service.readCards());
     }
 
     @PostMapping("/createCard")
-    public Card createCard(@RequestBody Card card){
-        return this.service.createCard(card);
+    public ResponseEntity<CardDTO> createCard(@RequestBody Card card) {
+        return new ResponseEntity<CardDTO>(this.service.createCard(card), HttpStatus.CREATED);
     }
 
     @DeleteMapping("/deleteCard/{cardId}")
-    public boolean deleteCard(@PathVariable Long cardId){
-        return this.service.deleteCard(cardId);
+    public ResponseEntity<?> deleteCard(@PathVariable Long cardId) {
+        return this.service.deleteCard(cardId)
+                ? ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build()
+                : ResponseEntity.noContent().build();
     }
 
     @GetMapping("/getCardById/{cardId}")
-    public Card getCardById(@PathVariable Long cardId){
-        return this.service.findCardById(cardId);
+    public ResponseEntity<CardDTO> getCardById(@PathVariable Long cardId) {
+        return ResponseEntity.ok(this.service.findCardById(cardId));
     }
 
     @PutMapping("/updateCard/{cardId}")
-    public Card updateCard(@PathVariable Long cardId, @RequestBody Card card){ return this.service.updateCard(cardId, card); }
+    public ResponseEntity<CardDTO> updateCard(@PathVariable Long cardId, @RequestBody Card card) {
+        return ResponseEntity.ok(this.service.updateCard(cardId, card));
+    }
 
     @PutMapping("/updateCard2")
-    public Card updateCard2(@PathParam("cardId") Long cardId, @RequestBody Card card){ return this.service.updateCard(cardId, card); }
+    public ResponseEntity<CardDTO> updateCard2(@PathParam("cardId") Long cardId, @RequestBody Card card) {
+        return ResponseEntity.ok(this.service.updateCard(cardId, card));
+    }
 
 }

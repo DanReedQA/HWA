@@ -1,42 +1,54 @@
 package com.qa.service;
 
 import com.qa.domain.Card;
+import com.qa.dto.CardDTO;
 import com.qa.exceptions.CardNotFoundException;
 import com.qa.repo.CardsRepository;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class CardService {
 
     private final CardsRepository repo;
 
+    private final ModelMapper mapper;
+
     @Autowired
-    public CardService(CardsRepository repo) {
+    public CardService(CardsRepository repo, ModelMapper mapper) {
         this.repo = repo;
+        this.mapper = mapper;
     }
 
-    public List<Card> readCards(){
-        return this.repo.findAll();
+    private CardDTO mapToDTO(Card card) {
+        return this.mapper.map(card, CardDTO.class);
     }
 
-    public Card createCard(Card card){
-        return this.repo.save(card);
+    public List<CardDTO> readCards() {
+        return this.repo.findAll().stream().map(this::mapToDTO).collect(Collectors.toList());
     }
 
-    public Card findCardById(Long cardId){
-        return this.repo.findById(cardId).orElseThrow(CardNotFoundException::new);
+    public CardDTO createCard(Card card) {
+        Card tempCard = this.repo.save(card);
+        return this.mapToDTO(tempCard);
     }
 
-    public Card updateCard(Long cardId, Card card){
-        Card update = findCardById(cardId);
+    public CardDTO findCardById(Long cardId) {
+        return this.mapToDTO(this.repo.findById(cardId).orElseThrow(CardNotFoundException::new));
+    }
+
+    public CardDTO updateCard(Long cardId, Card card) {
+        Card update = this.repo.findById(cardId).orElseThrow(CardNotFoundException::new);
         update.setCardName(card.getCardName());
         update.setRarity(card.getRarity());
         update.setStock(card.getStock());
         update.setValue(card.getValue());
-        return this.repo.save(update);
+        Card tempCard = this.repo.save(update);
+        return this.mapToDTO(tempCard);
     }
 
     public boolean deleteCard(Long cardId){
