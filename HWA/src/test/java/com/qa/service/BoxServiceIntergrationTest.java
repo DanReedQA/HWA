@@ -1,8 +1,8 @@
 package com.qa.service;
 
-import com.qa.domain.Card;
-import com.qa.dto.CardDTO;
-import com.qa.repo.CardsRepository;
+import com.qa.domain.Box;
+import com.qa.dto.BoxDTO;
+import com.qa.repo.BoxesRepository;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -20,48 +20,48 @@ import static org.junit.Assert.assertEquals;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-class CardServiceIntegrationTest {
+class BoxServiceIntegrationTest {
 
     @Autowired
-    private CardService service;
+    private BoxService service;
 
     @Autowired
-    private CardsRepository repository;
+    private BoxesRepository repository;
 
     @Autowired
     private ModelMapper mapper;
 
-    private Card testCard;
+    private Box testBox;
 
-    private Card testCardWithID;
+    private Box testBoxWithID;
 
-    private CardDTO mapToDTO(Card card){
-        return this.mapper.map(card, CardDTO.class);
+    private BoxDTO mapToDTO(Box box){
+        return this.mapper.map(box, BoxDTO.class);
     }
 
     @Before
     public void setUp(){
-        this.testCard = new Card("Card1", "Common", 50L, 5L);
+        this.testBox = new Box("Box1");
         this.repository.deleteAll();
-        this.testCardWithID = this.repository.save(this.testCard);
+        this.testBoxWithID = this.repository.save(this.testBox);
     }
 
     @Test
-    public void readCardsTest(){
-        assertThat(this.service.readCards())
+    public void readBoxesTest(){
+        assertThat(this.service.readBoxes())
                 .isEqualTo(
-                        Stream.of(this.mapToDTO(testCardWithID)).collect(Collectors.toList())
+                        Stream.of(this.mapToDTO(testBoxWithID)).collect(Collectors.toList())
                 );
     }
 
     @Test
-    public void createCardTest(){
-        assertEquals(this.mapToDTO(this.testCardWithID), this.service.createCard(testCard));
+    public void createBoxTest(){
+        assertEquals(this.mapToDTO(this.testBoxWithID), this.service.createBox(testBox));
     }
 
     @Test
-    public void findCardByIdTest(){
-        assertThat(this.service.findCardById(this.testCardWithID.getCardId())).isEqualTo(this.mapToDTO(this.testCardWithID));
+    public void findBoxByIdTest(){
+        assertThat(this.service.findBoxById(this.testBoxWithID.getBoxId())).isEqualTo(this.mapToDTO(this.testBoxWithID));
     }
 
 
@@ -75,8 +75,8 @@ class CardServiceIntegrationTest {
 //    }
 
     @Test
-    public void deleteCardTest(){
-        assertThat(this.service.deleteCard(this.testCardWithID.getCardId())).isFalse();
+    public void deleteBoxTest(){
+        assertThat(this.service.deleteBox(this.testBoxWithID.getBoxId())).isFalse();
     }
 
 

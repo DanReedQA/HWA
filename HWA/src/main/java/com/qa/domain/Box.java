@@ -23,6 +23,10 @@ public class Box {
 
     }
 
+    public Box(String boxName) {
+        this.boxName = boxName;
+    }
+
     public Long getBoxId() {
         return boxId;
     }
