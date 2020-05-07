@@ -20,7 +20,7 @@ import static org.junit.Assert.assertEquals;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class CardServiceIntegrationTest {
+class CardServiceIntegrationTest {
 
     @Autowired
     private CardService service;
