@@ -64,7 +64,7 @@ public class CardServiceUnitTest {
     }
 
     @Test
-    public void createNoteTest(){
+    public void createCustomerTest(){
         when(repository.save(testCard)).thenReturn(testCardWithID);
         when(this.mapper.map(testCardWithID, CardDTO.class)).thenReturn(cardDTO);
         assertEquals(this.service.createCard(testCard), this.cardDTO);
@@ -72,7 +72,7 @@ public class CardServiceUnitTest {
     }
 
     @Test
-    public void findNoteByIdTest(){
+    public void findCustomerByIdTest(){
         when(this.repository.findById(cardId)).thenReturn(java.util.Optional.ofNullable(testCardWithID));
         when(this.mapper.map(testCardWithID, CardDTO.class)).thenReturn(cardDTO);
         assertEquals(this.service.findCardById(this.cardId), cardDTO);
@@ -80,7 +80,7 @@ public class CardServiceUnitTest {
     }
 
     @Test
-    public void deleteNoteByExistingId(){
+    public void deleteCustomerByExistingId(){
         when(this.repository.existsById(cardId)).thenReturn(true, false);
         assertFalse(service.deleteCard(cardId));
         verify(repository, times(1)).deleteById(cardId);
@@ -88,7 +88,7 @@ public class CardServiceUnitTest {
     }
 
     @Test(expected = CardNotFoundException.class)
-    public void deleteNoteByNonExistingId(){
+    public void deleteCardByNonExistingId(){
         when(this.repository.existsById(cardId)).thenReturn(false);
         service.deleteCard(cardId);
         verify(repository, times(1)).existsById(cardId);
