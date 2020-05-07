@@ -44,7 +44,7 @@ public class OrderController {
     }
 
     @PutMapping("/updateOrder/{orderId}")
-    public ResponseEntity<OrderDTO> updateCard(@PathVariable Long orderId, @RequestBody Order order) {
+    public ResponseEntity<OrderDTO> updateOrder(@PathVariable Long orderId, @RequestBody Order order) {
         return ResponseEntity.ok(this.service.updateOrder(orderId, order));
     }
 
