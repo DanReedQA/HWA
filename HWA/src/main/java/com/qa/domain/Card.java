@@ -20,6 +20,14 @@ public class Card {
     @ManyToOne (targetEntity = Box.class)
     private Box box;
 
+    public Card(String cardName, String rarity, Long stock, Long value) {
+        this.cardName = cardName;
+        this.rarity = rarity;
+        this.stock = stock;
+        this.value = value;
+    }
+
+
     public Long getCardId() {
         return cardId;
     }
