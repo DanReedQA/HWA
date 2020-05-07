@@ -90,5 +90,4 @@ public class CardControllerUnitTest {
         assertEquals(this.cardController.getCardById(cardId), new ResponseEntity<CardDTO>(this.cardDTO, HttpStatus.OK));
         verify(service, times(1)).findCardById(cardId);
     }
-
 }
