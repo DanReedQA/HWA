@@ -13,16 +13,14 @@ public class Order {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long orderId;
     private Long customerId;
-    private Long cardId;
     private Long orderValue;
 
     public Order() {
 
     }
 
-    public Order(Long customerId, Long cardId, Long orderValue) {
+    public Order(Long customerId, Long orderValue) {
         this.customerId = customerId;
-        this.cardId = cardId;
         this.orderValue = orderValue;
     }
 
@@ -42,14 +40,6 @@ public class Order {
         this.customerId = customerId;
     }
 
-    public Long getCardId() {
-        return cardId;
-    }
-
-    public void setCardId(Long cardId) {
-        this.cardId = cardId;
-    }
-
     public Long getOrderValue() {
         return orderValue;
     }
@@ -65,12 +55,11 @@ public class Order {
         Order order = (Order) o;
         return Objects.equals(getOrderId(), order.getOrderId()) &&
                 Objects.equals(getCustomerId(), order.getCustomerId()) &&
-                Objects.equals(getCardId(), order.getCardId()) &&
                 Objects.equals(getOrderValue(), order.getOrderValue());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getOrderId(), getCustomerId(), getCardId(), getOrderValue());
+        return Objects.hash(getOrderId(), getCustomerId(), getOrderValue());
     }
 }
