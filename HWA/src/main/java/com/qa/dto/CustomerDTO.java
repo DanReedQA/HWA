@@ -1,5 +1,8 @@
 package com.qa.dto;
 
+import org.junit.Ignore;
+
+@Ignore
 public class CustomerDTO {
 
     private Long customerId;

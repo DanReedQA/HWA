@@ -1,16 +1,17 @@
 package com.qa.dto;
 
 import com.qa.domain.Card;
+import org.junit.Ignore;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Ignore
 public class BoxDTO {
 
     private Long boxId;
-    //  private Long cardId;  < --  To be added later
     private String boxName;
-//  private Long totalValue;  < --  To be added later
-//  private Long totalStock;  < --  To be added later
+
     private List<CardDTO> cards;
 
     public BoxDTO() {

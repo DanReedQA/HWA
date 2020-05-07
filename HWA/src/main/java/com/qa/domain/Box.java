@@ -11,16 +11,12 @@ public class Box {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long boxId;
-//  private Long cardId;  < --  To be added later
     private String boxName;
-//  private Long totalValue;  < --  To be added later
-//  private Long totalStock;  < --  To be added later
 
     @OneToMany (mappedBy = "box", fetch = FetchType.LAZY)
     private List<Card> cards = new ArrayList<>();
 
     public Box() {
-
     }
 
     public Box(String boxName) {

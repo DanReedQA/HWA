@@ -27,7 +27,6 @@ public class Card {
         this.value = value;
     }
 
-
     public Long getCardId() {
         return cardId;
     }
@@ -41,32 +40,28 @@ public class Card {
     }
 
     public void setCardName(String cardName) {
-        this.cardName = cardName;
-    }
+        this.cardName = cardName; }
 
     public String getRarity() {
         return rarity;
     }
 
     public void setRarity(String rarity) {
-        this.rarity = rarity;
-    }
+        this.rarity = rarity; }
 
     public Long getStock() {
         return stock;
     }
 
     public void setStock(Long stock) {
-        this.stock = stock;
-    }
+        this.stock = stock; }
 
     public Long getValue() {
         return value;
     }
 
     public void setValue(Long value) {
-        this.value = value;
-    }
+        this.value = value; }
 
     public Box getBox() {
         return box;
