@@ -20,6 +20,9 @@ public class Card {
     @ManyToOne (targetEntity = Box.class)
     private Box box;
 
+    public Card() {
+    }
+
     public Card(String cardName, String rarity, Long stock, Long value) {
         this.cardName = cardName;
         this.rarity = rarity;
@@ -76,12 +79,12 @@ public class Card {
         if (this == o) return true;
         if (!(o instanceof Card)) return false;
         Card card = (Card) o;
-        return Objects.equals(getCardId(), card.getCardId()) &&
-                Objects.equals(getCardName(), card.getCardName()) &&
-                Objects.equals(getRarity(), card.getRarity()) &&
-                Objects.equals(getStock(), card.getStock()) &&
-                Objects.equals(getValue(), card.getValue()) &&
-                Objects.equals(getBox(), card.getBox());
+        return getCardId().equals(card.getCardId()) &&
+                getCardName().equals(card.getCardName()) &&
+                getRarity().equals(card.getRarity()) &&
+                getStock().equals(card.getStock()) &&
+                getValue().equals(card.getValue()) &&
+                getBox().equals(card.getBox());
     }
 
     @Override

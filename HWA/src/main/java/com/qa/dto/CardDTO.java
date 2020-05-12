@@ -1,8 +1,9 @@
 package com.qa.dto;
 
-import org.junit.Ignore;
+import com.qa.domain.Box;
 
-@Ignore
+import java.util.Objects;
+
 public class CardDTO {
     private Long cardId;
     private String cardName;
@@ -58,5 +59,22 @@ public class CardDTO {
 
     public void setValue(Long value) {
         this.value = value;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof CardDTO)) return false;
+        CardDTO cardDTO = (CardDTO) o;
+        return Objects.equals(getCardId(), cardDTO.getCardId()) &&
+                Objects.equals(getCardName(), cardDTO.getCardName()) &&
+                Objects.equals(getRarity(), cardDTO.getRarity()) &&
+                Objects.equals(getStock(), cardDTO.getStock()) &&
+                Objects.equals(getValue(), cardDTO.getValue());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getCardId(), getCardName(), getRarity(), getStock(), getValue());
     }
 }
