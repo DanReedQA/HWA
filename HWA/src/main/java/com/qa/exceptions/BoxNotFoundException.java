@@ -5,6 +5,6 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 
 import javax.persistence.EntityNotFoundException;
 
-@ResponseStatus(code = HttpStatus.NOT_FOUND, reason = "The note doesn't exist")
+@ResponseStatus(code = HttpStatus.NOT_FOUND, reason = "The box doesn't exist")
 public class BoxNotFoundException extends EntityNotFoundException {
 }

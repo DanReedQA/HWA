@@ -5,6 +5,6 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 
 import javax.persistence.EntityNotFoundException;
 
-@ResponseStatus(code = HttpStatus.NOT_FOUND, reason = "The note doesn't exist")
+@ResponseStatus(code = HttpStatus.NOT_FOUND, reason = "The order doesn't exist")
 public class OrderNotFoundException extends EntityNotFoundException {
 }

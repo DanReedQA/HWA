@@ -6,12 +6,14 @@ public class OrderlineDTO {
     private Long cardId;
 
     public void Orderline() {
-
     }
 
-    public Long getOrderId() {
-        return orderId;
+    public void Orderline(Long orderId, Long cardId) {
+        this.orderId = orderId;
+        this.cardId = cardId;
     }
+
+    public Long getOrderId(Long orderId) { return orderId; }
 
     public void setOrderId(Long orderId) {
         this.orderId = orderId;
@@ -21,7 +23,6 @@ public class OrderlineDTO {
         return cardId;
     }
 
-    public void setCardId(Long cardId) {
-        this.cardId = cardId;
+    public void setCardId(Long cardId) { this.cardId = cardId;
     }
 }

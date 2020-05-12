@@ -5,6 +5,6 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 
 import javax.persistence.EntityNotFoundException;
 
-@ResponseStatus(code = HttpStatus.NOT_FOUND, reason = "The order line doesn't exist")
+@ResponseStatus(code = HttpStatus.NOT_FOUND, reason = "The orderline line doesn't exist")
 public class OrderlineNotFoundException extends EntityNotFoundException {
 }
