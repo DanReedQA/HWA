@@ -1,8 +1,5 @@
 package com.qa.dto;
 
-import org.junit.Ignore;
-
-@Ignore
 public class CustomerDTO {
 
     private Long customerId;
@@ -10,7 +7,6 @@ public class CustomerDTO {
     private String surname;
 
     public CustomerDTO() {
-
     }
 
     public CustomerDTO(String firstName, String surname) {

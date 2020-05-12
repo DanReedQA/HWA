@@ -16,7 +16,6 @@ public class Order {
     private Long orderValue;
 
     public Order() {
-
     }
 
     public Order(Long customerId, Long orderValue) {

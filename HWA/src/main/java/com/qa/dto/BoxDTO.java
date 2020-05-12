@@ -1,12 +1,10 @@
 package com.qa.dto;
 
 import com.qa.domain.Card;
-import org.junit.Ignore;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Ignore
 public class BoxDTO {
 
     private Long boxId;
