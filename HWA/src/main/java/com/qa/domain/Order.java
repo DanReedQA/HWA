@@ -1,9 +1,6 @@
 package com.qa.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
@@ -15,11 +12,16 @@ public class Order {
     private Long customerId;
     private Long orderValue;
 
+    @ManyToOne(targetEntity = Customer.class)
+    private Customer customer;
+
+    @ManyToOne(targetEntity = Orderline.class)
+    private Orderline orderline;
+
     public Order() {
     }
 
-    public Order(Long customerId, Long orderValue) {
-        this.customerId = customerId;
+    public Order(Long orderValue) {
         this.orderValue = orderValue;
     }
 
@@ -47,6 +49,10 @@ public class Order {
         this.orderValue = orderValue;
     }
 
+    public Customer getCustomer() { return customer; }
+
+    public void setCustomer(Customer customer) { this.customer = customer; }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -54,11 +60,12 @@ public class Order {
         Order order = (Order) o;
         return Objects.equals(getOrderId(), order.getOrderId()) &&
                 Objects.equals(getCustomerId(), order.getCustomerId()) &&
-                Objects.equals(getOrderValue(), order.getOrderValue());
+                Objects.equals(getOrderValue(), order.getOrderValue()) &&
+                Objects.equals(getCustomer(), order.getCustomer());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getOrderId(), getCustomerId(), getOrderValue());
+        return Objects.hash(getOrderId(), getCustomerId(), getOrderValue(), getCustomer());
     }
 }

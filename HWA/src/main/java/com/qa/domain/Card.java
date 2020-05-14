@@ -20,6 +20,9 @@ public class Card {
     @ManyToOne (targetEntity = Box.class)
     private Box box;
 
+    @ManyToOne (targetEntity = Orderline.class)
+    private Orderline orderline;
+
     public Card() {
     }
 
@@ -74,21 +77,30 @@ public class Card {
         this.box = box;
     }
 
+    public Orderline getOrderline() {
+        return orderline;
+    }
+
+    public void setOrderline(Orderline orderline) {
+        this.orderline = orderline;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Card)) return false;
         Card card = (Card) o;
-        return getCardId().equals(card.getCardId()) &&
-                getCardName().equals(card.getCardName()) &&
-                getRarity().equals(card.getRarity()) &&
-                getStock().equals(card.getStock()) &&
-                getValue().equals(card.getValue()) &&
-                getBox().equals(card.getBox());
+        return Objects.equals(getCardId(), card.getCardId()) &&
+                Objects.equals(getCardName(), card.getCardName()) &&
+                Objects.equals(getRarity(), card.getRarity()) &&
+                Objects.equals(getStock(), card.getStock()) &&
+                Objects.equals(getValue(), card.getValue()) &&
+                Objects.equals(getBox(), card.getBox()) &&
+                Objects.equals(getOrderline(), card.getOrderline());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getCardId(), getCardName(), getRarity(), getStock(), getValue(), getBox());
+        return Objects.hash(getCardId(), getCardName(), getRarity(), getStock(), getValue(), getBox(), getOrderline());
     }
 }

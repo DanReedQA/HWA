@@ -1,9 +1,8 @@
 package com.qa.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 @Entity
@@ -14,6 +13,9 @@ public class Customer {
     private Long customerId;
     private String firstName;
     private String surname;
+
+    @OneToMany(mappedBy = "customer", fetch = FetchType.LAZY)
+    private List<Order> orders = new ArrayList<>();
 
     public Customer() {
     }
@@ -47,6 +49,14 @@ public class Customer {
         this.surname = surname;
     }
 
+    public List<Order> getOrders() {
+        return orders;
+    }
+
+    public void setOrders(List<Order> orders) {
+        this.orders = orders;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -54,11 +64,12 @@ public class Customer {
         Customer customer = (Customer) o;
         return Objects.equals(getCustomerId(), customer.getCustomerId()) &&
                 Objects.equals(getFirstName(), customer.getFirstName()) &&
-                Objects.equals(getSurname(), customer.getSurname());
+                Objects.equals(getSurname(), customer.getSurname()) &&
+                Objects.equals(getOrders(), customer.getOrders());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getCustomerId(), getFirstName(), getSurname());
+        return Objects.hash(getCustomerId(), getFirstName(), getSurname(), getOrders());
     }
 }
