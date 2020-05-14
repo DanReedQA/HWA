@@ -12,14 +12,15 @@ public class Customer {
     private String firstName;
     private String surname;
 
-    @ManyToOne (targetEntity = Order.class)
-    private Order order;
+    @ManyToOne (targetEntity = Orders.class)
+    private Orders orders;
 
 
     public Customer() {
     }
 
     public Customer(String firstName, String surname) {
+        super();
         this.firstName = firstName;
         this.surname = surname;
     }

@@ -41,6 +41,15 @@ public class CustomerDTO {
     }
 
     @Override
+    public String toString() {
+        return "CustomerDTO{" +
+                "customerId=" + customerId +
+                ", firstName='" + firstName + '\'' +
+                ", surname='" + surname + '\'' +
+                '}';
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof CustomerDTO)) return false;

@@ -12,6 +12,7 @@ import javax.websocket.server.PathParam;
 import java.util.List;
 
 @RestController
+@RequestMapping("/customer")
 public class CustomerController {
 
     private final CustomerService service;

@@ -32,6 +32,14 @@ public class OrderDTO {
     }
 
     @Override
+    public String toString() {
+        return "OrderDTO{" +
+                "orderId=" + orderId +
+                ", customers=" + customers +
+                '}';
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof OrderDTO)) return false;

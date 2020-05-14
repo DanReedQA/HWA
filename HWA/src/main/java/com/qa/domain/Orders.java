@@ -6,23 +6,18 @@ import java.util.List;
 import java.util.Objects;
 
 @Entity
-public class Order {
+public class Orders {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long orderId;
-//    private Long customerId;
-//    private Long orderValue;
 
-    @OneToMany (mappedBy = "order", fetch = FetchType.LAZY)
+
+    @OneToMany (mappedBy = "orders", fetch = FetchType.LAZY)
     private List<Customer> customers = new ArrayList<>();
 
-    public Order() {
+    public Orders() {
     }
-
-//    public Order(Long customerId) {
-//        this.customerId = customerId;
-//    }
 
     public Long getOrderId() {
         return orderId;
@@ -32,15 +27,6 @@ public class Order {
         this.orderId = orderId;
     }
 
-//    public Long getCustomerId() {
-//        return customerId;
-//    }
-//
-//    public void setCustomerId(Long customerId) {
-//        this.customerId = customerId;
-//    }
-
-
     public List<Customer> getCustomers() { return customers; }
 
     public void setCustomers(List<Customer> customers) { this.customers = customers; }
@@ -48,10 +34,10 @@ public class Order {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Order)) return false;
-        Order order = (Order) o;
-        return Objects.equals(getOrderId(), order.getOrderId()) &&
-                Objects.equals(getCustomers(), order.getCustomers());
+        if (!(o instanceof Orders)) return false;
+        Orders orders = (Orders) o;
+        return Objects.equals(getOrderId(), orders.getOrderId()) &&
+                Objects.equals(getCustomers(), orders.getCustomers());
     }
 
     @Override
