@@ -20,9 +20,6 @@ public class Card {
     @ManyToOne (targetEntity = Box.class)
     private Box box;
 
-    @ManyToOne (targetEntity = Orderline.class)
-    private Orderline orderline;
-
     public Card() {
     }
 
@@ -77,13 +74,6 @@ public class Card {
         this.box = box;
     }
 
-    public Orderline getOrderline() {
-        return orderline;
-    }
-
-    public void setOrderline(Orderline orderline) {
-        this.orderline = orderline;
-    }
 
     @Override
     public boolean equals(Object o) {
@@ -95,12 +85,11 @@ public class Card {
                 Objects.equals(getRarity(), card.getRarity()) &&
                 Objects.equals(getStock(), card.getStock()) &&
                 Objects.equals(getValue(), card.getValue()) &&
-                Objects.equals(getBox(), card.getBox()) &&
-                Objects.equals(getOrderline(), card.getOrderline());
+                Objects.equals(getBox(), card.getBox());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getCardId(), getCardName(), getRarity(), getStock(), getValue(), getBox(), getOrderline());
+        return Objects.hash(getCardId(), getCardName(), getRarity(), getStock(), getValue(), getBox());
     }
 }
