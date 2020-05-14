@@ -1,8 +1,5 @@
 package com.qa.dto;
 
-import com.qa.domain.Card;
-
-import java.util.ArrayList;
 import java.util.List;
 
 public class BoxDTO {

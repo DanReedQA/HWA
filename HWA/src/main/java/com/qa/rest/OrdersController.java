@@ -1,8 +1,8 @@
 package com.qa.rest;
 
-import com.qa.domain.Order;
+import com.qa.domain.Orders;
 import com.qa.dto.OrderDTO;
-import com.qa.service.OrderService;
+import com.qa.service.OrdersService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,12 +12,14 @@ import javax.websocket.server.PathParam;
 import java.util.List;
 
 @RestController
-public class OrderController {
+@RequestMapping("/order")
+public class OrdersController {
 
-    private final OrderService service;
+    private final OrdersService service;
 
     @Autowired
-    public OrderController(OrderService service) {
+    public OrdersController(OrdersService service) {
+        super();
         this.service = service;
     }
 
@@ -27,8 +29,8 @@ public class OrderController {
     }
 
     @PostMapping("/createOrder")
-    public ResponseEntity<OrderDTO> createCard(@RequestBody Order order) {
-        return new ResponseEntity<OrderDTO>(this.service.createOrder(order), HttpStatus.CREATED);
+    public ResponseEntity<OrderDTO> createOrder(@RequestBody Orders orders) {
+        return new ResponseEntity<OrderDTO>(this.service.createOrder(orders), HttpStatus.CREATED);
     }
 
     @DeleteMapping("/deleteOrder/{orderId}")
@@ -44,13 +46,13 @@ public class OrderController {
     }
 
     @PutMapping("/updateOrder/{orderId}")
-    public ResponseEntity<OrderDTO> updateOrder(@PathVariable Long orderId, @RequestBody Order order) {
-        return ResponseEntity.ok(this.service.updateOrder(orderId, order));
+    public ResponseEntity<OrderDTO> updateOrder(@PathVariable Long orderId, @RequestBody Orders orders) {
+        return ResponseEntity.ok(this.service.updateOrder(orders, orderId));
     }
 
     @PutMapping("/updateOrder2")
-    public ResponseEntity<OrderDTO> updateOrder2(@PathParam("orderId") Long orderId, @RequestBody Order order) {
-        return ResponseEntity.ok(this.service.updateOrder(orderId, order));
+    public ResponseEntity<OrderDTO> updateOrder2(@PathParam("orderId") Long orderId, @RequestBody Orders orders) {
+        return ResponseEntity.ok(this.service.updateOrder(orders, orderId));
     }
 
 }

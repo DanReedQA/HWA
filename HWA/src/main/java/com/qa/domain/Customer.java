@@ -1,8 +1,6 @@
 package com.qa.domain;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 
 @Entity
@@ -14,13 +12,15 @@ public class Customer {
     private String firstName;
     private String surname;
 
-    @OneToMany(mappedBy = "customer", fetch = FetchType.LAZY)
-    private List<Order> orders = new ArrayList<>();
+    @ManyToOne (targetEntity = Orders.class)
+    private Orders orders;
+
 
     public Customer() {
     }
 
     public Customer(String firstName, String surname) {
+        super();
         this.firstName = firstName;
         this.surname = surname;
     }
@@ -49,14 +49,6 @@ public class Customer {
         this.surname = surname;
     }
 
-    public List<Order> getOrders() {
-        return orders;
-    }
-
-    public void setOrders(List<Order> orders) {
-        this.orders = orders;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -64,12 +56,11 @@ public class Customer {
         Customer customer = (Customer) o;
         return Objects.equals(getCustomerId(), customer.getCustomerId()) &&
                 Objects.equals(getFirstName(), customer.getFirstName()) &&
-                Objects.equals(getSurname(), customer.getSurname()) &&
-                Objects.equals(getOrders(), customer.getOrders());
+                Objects.equals(getSurname(), customer.getSurname());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getCustomerId(), getFirstName(), getSurname(), getOrders());
+        return Objects.hash(getCustomerId(), getFirstName(), getSurname());
     }
 }

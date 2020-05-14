@@ -1,41 +1,55 @@
 package com.qa.dto;
 
+import java.util.List;
+import java.util.Objects;
+
 public class OrderDTO {
 
     private Long orderId;
-    private Long customerId;
-    private Long orderValue;
+
+    private List<CustomerDTO> customers;
 
     public OrderDTO() {
-
     }
 
-    public OrderDTO(Long customerId, Long orderValue) {
-        this.customerId = customerId;
-        this.orderValue = orderValue;
+    public OrderDTO( List<CustomerDTO> customers) {
+        super();
+        this.customers = customers;
     }
 
-    public Long getOrderId() {
-        return orderId;
-    }
+    public Long getOrderId() { return orderId; }
 
     public void setOrderId(Long orderId) {
         this.orderId = orderId;
     }
 
-    public Long getCustomerId() {
-        return customerId;
+    public List<CustomerDTO> getCustomers() {
+        return customers;
     }
 
-    public void setCustomerId(Long customerId) {
-        this.customerId = customerId;
+    public void setCustomers(List<CustomerDTO> customers) {
+        this.customers = customers;
     }
 
-    public Long getOrderValue() {
-        return orderValue;
+    @Override
+    public String toString() {
+        return "OrderDTO{" +
+                "orderId=" + orderId +
+                ", customers=" + customers +
+                '}';
     }
 
-    public void setOrderValue(Long orderValue) {
-        this.orderValue = orderValue;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof OrderDTO)) return false;
+        OrderDTO orderDTO = (OrderDTO) o;
+        return Objects.equals(getOrderId(), orderDTO.getOrderId()) &&
+                Objects.equals(getCustomers(), orderDTO.getCustomers());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getOrderId(), getCustomers());
     }
 }
