@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 @Service
 public class OrderService {
 
-    private final OrdersRepository repo;
+    private  OrdersRepository repo;
 
     private final ModelMapper mapper;
 
@@ -24,36 +24,33 @@ public class OrderService {
         this.mapper = mapper;
     }
 
-    private OrderDTO mapToDTO(Order order) {
+    public OrderDTO mapToDTO(Order order) {
         return this.mapper.map(order, OrderDTO.class);
+    }
+
+    public OrderDTO createOrder(Order order) {
+        return this.mapToDTO(this.repo.save(order));
+    }
+
+    public boolean deleteOrder(Long orderId) {
+        if (!this.repo.existsById(orderId)) {
+            throw new OrderNotFoundException();
+        }
+        this.repo.deleteById(orderId);
+        return this.repo.existsById(orderId);
+    }
+
+    public OrderDTO findOrderById(Long orderId) {
+        return this.mapToDTO(this.repo.findById(orderId).orElseThrow(() -> new OrderNotFoundException()));
     }
 
     public List<OrderDTO> readOrders() {
         return this.repo.findAll().stream().map(this::mapToDTO).collect(Collectors.toList());
     }
 
-    public OrderDTO createOrder(Order order) {
-        Order tempOrder = this.repo.save(order);
-        return this.mapToDTO(tempOrder);
-    }
-
-    public OrderDTO findOrderById(Long orderId) {
-        return this.mapToDTO(this.repo.findById(orderId).orElseThrow(OrderNotFoundException::new));
-    }
-
-    public OrderDTO updateOrder(Long orderId, Order order) {
-        Order update = this.repo.findById(orderId).orElseThrow(OrderNotFoundException::new);
-        update.setCustomerId(order.getCustomerId());
-        update.setOrderValue(order.getOrderValue());
-        Order tempOrder = this.repo.save(update);
-        return this.mapToDTO(tempOrder);
-    }
-
-    public boolean deleteOrder(Long orderId){
-        if(!this.repo.existsById(orderId)){
-            throw new OrderNotFoundException();
-        }
-        this.repo.deleteById(orderId);
-        return this.repo.existsById(orderId);
+    public OrderDTO updateOrder(Order customer, Long orderId) {
+        Order toUpdate = this.repo.findById(orderId).orElseThrow(() -> new OrderNotFoundException());
+        toUpdate.setCustomers(customer.getCustomers());
+        return this.mapToDTO(this.repo.save(toUpdate));
     }
 }

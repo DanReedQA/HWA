@@ -1,9 +1,8 @@
 package com.qa.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 @Entity
@@ -12,16 +11,18 @@ public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long orderId;
-    private Long customerId;
-    private Long orderValue;
+//    private Long customerId;
+//    private Long orderValue;
+
+    @OneToMany (mappedBy = "order", fetch = FetchType.LAZY)
+    private List<Customer> customers = new ArrayList<>();
 
     public Order() {
     }
 
-    public Order(Long customerId, Long orderValue) {
-        this.customerId = customerId;
-        this.orderValue = orderValue;
-    }
+//    public Order(Long customerId) {
+//        this.customerId = customerId;
+//    }
 
     public Long getOrderId() {
         return orderId;
@@ -31,21 +32,18 @@ public class Order {
         this.orderId = orderId;
     }
 
-    public Long getCustomerId() {
-        return customerId;
-    }
+//    public Long getCustomerId() {
+//        return customerId;
+//    }
+//
+//    public void setCustomerId(Long customerId) {
+//        this.customerId = customerId;
+//    }
 
-    public void setCustomerId(Long customerId) {
-        this.customerId = customerId;
-    }
 
-    public Long getOrderValue() {
-        return orderValue;
-    }
+    public List<Customer> getCustomers() { return customers; }
 
-    public void setOrderValue(Long orderValue) {
-        this.orderValue = orderValue;
-    }
+    public void setCustomers(List<Customer> customers) { this.customers = customers; }
 
     @Override
     public boolean equals(Object o) {
@@ -53,12 +51,11 @@ public class Order {
         if (!(o instanceof Order)) return false;
         Order order = (Order) o;
         return Objects.equals(getOrderId(), order.getOrderId()) &&
-                Objects.equals(getCustomerId(), order.getCustomerId()) &&
-                Objects.equals(getOrderValue(), order.getOrderValue());
+                Objects.equals(getCustomers(), order.getCustomers());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getOrderId(), getCustomerId(), getOrderValue());
+        return Objects.hash(getOrderId(), getCustomers());
     }
 }

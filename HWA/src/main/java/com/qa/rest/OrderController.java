@@ -12,12 +12,14 @@ import javax.websocket.server.PathParam;
 import java.util.List;
 
 @RestController
+@RequestMapping("/order")
 public class OrderController {
 
-    private final OrderService service;
+    private OrderService service;
 
     @Autowired
     public OrderController(OrderService service) {
+        super();
         this.service = service;
     }
 
@@ -45,12 +47,12 @@ public class OrderController {
 
     @PutMapping("/updateOrder/{orderId}")
     public ResponseEntity<OrderDTO> updateOrder(@PathVariable Long orderId, @RequestBody Order order) {
-        return ResponseEntity.ok(this.service.updateOrder(orderId, order));
+        return ResponseEntity.ok(this.service.updateOrder(order, orderId));
     }
 
     @PutMapping("/updateOrder2")
     public ResponseEntity<OrderDTO> updateOrder2(@PathParam("orderId") Long orderId, @RequestBody Order order) {
-        return ResponseEntity.ok(this.service.updateOrder(orderId, order));
+        return ResponseEntity.ok(this.service.updateOrder(order, orderId));
     }
 
 }
