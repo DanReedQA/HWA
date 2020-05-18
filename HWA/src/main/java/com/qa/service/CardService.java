@@ -44,8 +44,6 @@ public class CardService {
     public CardDTO updateCard(Long cardId, Card card) {
         Card update = this.repo.findById(cardId).orElseThrow(CardNotFoundException::new);
         update.setCardName(card.getCardName());
-        update.setRarity(card.getRarity());
-        update.setStock(card.getStock());
         update.setValue(card.getValue());
         Card tempCard = this.repo.save(update);
         return this.mapToDTO(tempCard);
