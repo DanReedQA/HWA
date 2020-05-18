@@ -3,8 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Index</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
 
+<!-- Tab links -->
+<div class="tab">
+    <button class="tablinks" onclick="openBox(event, 'Box One')">Box One</button>
+    <button class="tablinks" onclick="openBox(event, 'Box Two')">Box Two</button>
+    <button class="tablinks" onclick="openBox(event, 'Box Three')">Box Three</button>
+</div>
+
+<!-- Tab content -->
+<div id="Box One" class="tabcontent">
+    <h3>Box One</h3>
+    <p>Content For Box One</p>
+</div>
+<div id="Box Two" class="tabcontent">
+    <h3>Box Two</h3>
+    <p>Content For Box Two</p>
+</div>
+<div id="Box Three" class="tabcontent">
+    <h3>Box Three</h3>
+    <p>Content For Box Three</p>
+</div>
+
+<!-- Scripts -->
+<script src="js/index.js"></script>
 </body>
 </html>
