@@ -56,7 +56,7 @@ class CardControllerIntegrationTest {
     @Before
     public void setUp(){
         this.repository.deleteAll();
-        this.testCard = new Card("Card1", "Common", 50L, 5L);
+        this.testCard = new Card("Card1", 5L);
         this.testCardWithID = this.repository.save(testCard);
         this.cardId = testCardWithID.getCardId();
         this.cardDTO = this.mapToDTO(testCardWithID);

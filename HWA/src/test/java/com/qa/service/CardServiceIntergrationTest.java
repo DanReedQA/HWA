@@ -41,7 +41,7 @@ class CardServiceIntegrationTest {
 
     @Before
     public void setUp(){
-        this.testCard = new Card("Card1", "Common", 50L, 5L);
+        this.testCard = new Card("Card1", 5L);
         this.repository.deleteAll();
         this.testCardWithID = this.repository.save(this.testCard);
     }

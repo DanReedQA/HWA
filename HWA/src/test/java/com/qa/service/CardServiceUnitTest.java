@@ -48,9 +48,9 @@ public class CardServiceUnitTest {
     @Before
     public void setUp() {
         this.cardList = new ArrayList<>();
-        this.testCard = new Card("Card1", "Common", 50L, 5L);
+        this.testCard = new Card("Card1", 5L);
         this.cardList.add(testCard);
-        this.testCardWithID = new Card(testCard.getCardName(), testCard.getRarity(), testCard.getStock(), testCard.getValue());
+        this.testCardWithID = new Card(testCard.getCardName(), testCard.getValue());
         this.testCardWithID.setCardId(cardId);
         this.cardDTO = this.mapToDTO(testCardWithID);
     }
