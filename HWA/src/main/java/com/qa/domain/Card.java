@@ -13,8 +13,6 @@ public class Card {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long cardId;
     private String cardName;
-    private String rarity;
-    private Long stock;
     private Long value;
 
     @ManyToOne (targetEntity = Box.class)
@@ -23,10 +21,8 @@ public class Card {
     public Card() {
     }
 
-    public Card(String cardName, String rarity, Long stock, Long value) {
+    public Card(String cardName, Long value) {
         this.cardName = cardName;
-        this.rarity = rarity;
-        this.stock = stock;
         this.value = value;
     }
 
@@ -44,20 +40,6 @@ public class Card {
 
     public void setCardName(String cardName) {
         this.cardName = cardName; }
-
-    public String getRarity() {
-        return rarity;
-    }
-
-    public void setRarity(String rarity) {
-        this.rarity = rarity; }
-
-    public Long getStock() {
-        return stock;
-    }
-
-    public void setStock(Long stock) {
-        this.stock = stock; }
 
     public Long getValue() {
         return value;
@@ -82,14 +64,12 @@ public class Card {
         Card card = (Card) o;
         return Objects.equals(getCardId(), card.getCardId()) &&
                 Objects.equals(getCardName(), card.getCardName()) &&
-                Objects.equals(getRarity(), card.getRarity()) &&
-                Objects.equals(getStock(), card.getStock()) &&
                 Objects.equals(getValue(), card.getValue()) &&
                 Objects.equals(getBox(), card.getBox());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getCardId(), getCardName(), getRarity(), getStock(), getValue(), getBox());
+        return Objects.hash(getCardId(), getCardName(), getValue(), getBox());
     }
 }
