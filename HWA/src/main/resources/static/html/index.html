@@ -6,6 +6,45 @@
     <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
+<div id="header">
+    <img src="img/kc.png" alt="logo">
+    <h1>kiaba Corp Card Shop</h1>
+
+    <!-- Button to open the modal login form -->
+    <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+    <!-- The Modal -->
+    <div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+        class="close" title="Close Modal">&times;</span>
+
+        <!-- Modal Content -->
+        <form class="modal-content animate">
+            <div class="imgcontainer">
+                <img src="img/kaiba.png" alt="Avatar" class="avatar" width="128.5" height="111.5">
+            </div>
+
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+    </div>
+
+</div>
 
 <!-- Tab links -->
 <div class="tab">
@@ -18,17 +57,95 @@
 <div id="Box One" class="tabcontent">
     <h3>Box One</h3>
     <p>Content For Box One</p>
-</div>
+    <br>
+    <!-- Button to open card1 -->
+    <img src="img/blueyes.jpg" alt="blue-eyes" width="174" height="250" onclick="document.getElementById('id02').style.display='block'">
+    <!-- The Modal -->
+    <div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'"
+        class="close" title="Close Modal">&times;</span>
+        <!-- Modal Content -->
+        <form class="modal-content animate">
+            <div class="imgcontainer">
+                <img src="img/blueyes.jpg" alt="blue-eyes" class="avatar" width="348" height="500">
+            </div>
+
+            <div class="container">
+                <h3>Blue Eyes White Dragon</h3>
+                <h3>Price: 400</h3>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id02').style.display='none'" class="buybtn">Purchase</button>
+            </div>
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+            </div>
+        </form>
+    </div>
+
 <div id="Box Two" class="tabcontent">
     <h3>Box Two</h3>
     <p>Content For Box Two</p>
+    <br>
+    <br>
+    <div class="click-zoom">
+        <label>
+            <input type="checkbox">
+            <img src="img/darkmagician.jpg" alt="dark-magician" width="174" height="250">
+        </label>
+    </div>
+    <div class="click-zoom">
+        <label>
+            <input type="checkbox">
+            <img src="img/darkmagician.jpg" alt="dark-magician" width="174" height="250">
+        </label>
+    </div>
+    <div class="click-zoom">
+        <label>
+            <input type="checkbox">
+            <img src="img/darkmagician.jpg" alt="dark-magician" width="174" height="250">
+        </label>
+    </div>
+    <div class="click-zoom">
+        <label>
+            <input type="checkbox">
+            <img src="img/darkmagician.jpg" alt="dark-magician" width="174" height="250">
+        </label>
+    </div>
 </div>
+
 <div id="Box Three" class="tabcontent">
     <h3>Box Three</h3>
     <p>Content For Box Three</p>
-</div>
+    <br>
+    <br>
+    <div class="click-zoom">
+        <label>
+            <input type="checkbox">
+            <img src="img/redeyes.jpg" alt="red-eyes" width="174" height="250">
+        </label>
+    </div>
+    <div class="click-zoom">
+        <label>
+            <input type="checkbox">
+            <img src="img/redeyes.jpg" alt="red-eyes" width="174" height="250">
+        </label>
+    </div>
+    <div class="click-zoom">
+        <label>
+            <input type="checkbox">
+            <img src="img/redeyes.jpg" alt="red-eyes" width="174" height="250">
+        </label>
+    </div>
+    <div class="click-zoom">
+        <label>
+            <input type="checkbox">
+            <img src="img/redeyes.jpg" alt="red-eyes" width="174" height="250">
+        </label>
+    </div>
 
-<!-- Scripts -->
+    <!-- Scripts -->
 <script src="js/index.js"></script>
 </body>
 </html>
