@@ -9,8 +9,7 @@ public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long customerId;
-    private String firstName;
-    private String surname;
+    private String username;
 
     @ManyToOne (targetEntity = Orders.class)
     private Orders orders;
@@ -19,10 +18,9 @@ public class Customer {
     public Customer() {
     }
 
-    public Customer(String firstName, String surname) {
+    public Customer(String username) {
         super();
-        this.firstName = firstName;
-        this.surname = surname;
+        this.username = username;
     }
 
     public Long getCustomerId() {
@@ -33,20 +31,12 @@ public class Customer {
         this.customerId = customerId;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getUsername() {
+        return username;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getSurname() {
-        return surname;
-    }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
+    public void setUsername(String firstName) {
+        this.username = firstName;
     }
 
     @Override
@@ -55,12 +45,11 @@ public class Customer {
         if (!(o instanceof Customer)) return false;
         Customer customer = (Customer) o;
         return Objects.equals(getCustomerId(), customer.getCustomerId()) &&
-                Objects.equals(getFirstName(), customer.getFirstName()) &&
-                Objects.equals(getSurname(), customer.getSurname());
+                Objects.equals(getUsername(), customer.getUsername());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getCustomerId(), getFirstName(), getSurname());
+        return Objects.hash(getCustomerId(), getUsername());
     }
 }

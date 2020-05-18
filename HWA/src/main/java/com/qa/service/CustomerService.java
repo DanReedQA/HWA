@@ -43,8 +43,7 @@ public class CustomerService {
 
     public CustomerDTO updateCustomer(Long customerId, Customer customer) {
         Customer update = this.repo.findById(customerId).orElseThrow(CustomerNotFoundException::new);
-        update.setFirstName(customer.getFirstName());
-        update.setSurname(customer.getSurname());
+        update.setUsername(customer.getUsername());
         Customer tempCustomer = this.repo.save(update);
         return this.mapToDTO(tempCustomer);
     }

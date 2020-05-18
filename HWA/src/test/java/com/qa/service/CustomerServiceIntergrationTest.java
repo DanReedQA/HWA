@@ -41,7 +41,7 @@ class CustomerServiceIntegrationTest {
 
     @Before
     public void setUp(){
-        this.testCustomer = new Customer("Dan", "Reed");
+        this.testCustomer = new Customer("Dan");
         this.repository.deleteAll();
         this.testCustomerWithID = this.repository.save(this.testCustomer);
     }

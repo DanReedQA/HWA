@@ -5,15 +5,13 @@ import java.util.Objects;
 public class CustomerDTO {
 
     private Long customerId;
-    private String firstName;
-    private String surname;
+    private String username;
 
     public CustomerDTO() {
     }
 
-    public CustomerDTO(String firstName, String surname) {
-        this.firstName = firstName;
-        this.surname = surname;
+    public CustomerDTO(String firstName) {
+        this.username = firstName;
     }
 
     public Long getCustomerId() {
@@ -25,28 +23,11 @@ public class CustomerDTO {
     }
 
     public String getFirstName() {
-        return firstName;
+        return username;
     }
 
     public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getSurname() {
-        return surname;
-    }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
-
-    @Override
-    public String toString() {
-        return "CustomerDTO{" +
-                "customerId=" + customerId +
-                ", firstName='" + firstName + '\'' +
-                ", surname='" + surname + '\'' +
-                '}';
+        this.username = firstName;
     }
 
     @Override
@@ -55,12 +36,11 @@ public class CustomerDTO {
         if (!(o instanceof CustomerDTO)) return false;
         CustomerDTO that = (CustomerDTO) o;
         return Objects.equals(getCustomerId(), that.getCustomerId()) &&
-                Objects.equals(getFirstName(), that.getFirstName()) &&
-                Objects.equals(getSurname(), that.getSurname());
+                Objects.equals(getFirstName(), that.getFirstName());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getCustomerId(), getFirstName(), getSurname());
+        return Objects.hash(getCustomerId(), getFirstName());
     }
 }
