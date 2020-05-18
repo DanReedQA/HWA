@@ -61,7 +61,7 @@ public class OrdersService {
     public OrderDTO addCustomerToOrder(Long orderId, Customer customer){
         Orders toUpdate = this.ordersRepository.findById(orderId).orElseThrow(() -> new OrdersNotFoundException());
         Customer tmp = this.customersRepository.save(customer);
-        toUpdate.getCustomers().add(tmp);
+        toUpdate.getCustomers().add(customer);
         return this.mapToDTO(this.ordersRepository.saveAndFlush(toUpdate));
     }
 }

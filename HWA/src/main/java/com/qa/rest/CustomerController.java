@@ -49,9 +49,9 @@ public class CustomerController {
         return ResponseEntity.ok(this.service.updateCustomer(customerId, customer));
     }
 
-    @PutMapping("/updateCustomer2")
-    public ResponseEntity<CustomerDTO> updateCustomer2(@PathParam("customerId") Long customerId, @RequestBody Customer customer) {
-        return ResponseEntity.ok(this.service.updateCustomer(customerId, customer));
-    }
+//    @PutMapping("/updateCustomer2")
+//    public ResponseEntity<CustomerDTO> updateCustomer2(@PathParam("customerId") Long customerId, @RequestBody Customer customer) {
+//        return ResponseEntity.ok(this.service.updateCustomer(customerId, customer));
+//    }
 
 }

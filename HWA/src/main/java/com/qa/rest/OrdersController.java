@@ -1,5 +1,6 @@
 package com.qa.rest;
 
+import com.qa.domain.Customer;
 import com.qa.domain.Orders;
 import com.qa.dto.OrderDTO;
 import com.qa.service.OrdersService;
@@ -55,4 +56,8 @@ public class OrdersController {
         return ResponseEntity.ok(this.service.updateOrder(orders, orderId));
     }
 
+    @PatchMapping("/addCustomerToOrder/{orderId}")
+    public ResponseEntity<OrderDTO> addCustomerToOrder(@PathVariable Long orderId, @RequestBody Customer customer) {
+        return new ResponseEntity<OrderDTO>(this.service.addCustomerToOrder(orderId, customer), HttpStatus.ACCEPTED);
+    }
 }

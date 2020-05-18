@@ -48,9 +48,9 @@ public class BoxController {
         return ResponseEntity.ok(this.service.updateBox(boxId, box));
     }
 
-    @PutMapping("/updateBox2")
-    public ResponseEntity<BoxDTO> updateBox2(@PathParam("boxId") Long boxId, @RequestBody Box box){
-        return ResponseEntity.ok(this.service.updateBox(boxId, box));
-    }
+//    @PutMapping("/updateBox2")
+//    public ResponseEntity<BoxDTO> updateBox2(@PathParam("boxId") Long boxId, @RequestBody Box box){
+//        return ResponseEntity.ok(this.service.updateBox(boxId, box));
+//    }
 
 }

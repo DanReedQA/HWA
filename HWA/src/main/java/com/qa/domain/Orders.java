@@ -12,7 +12,6 @@ public class Orders {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long orderId;
 
-
     @OneToMany (mappedBy = "orders", fetch = FetchType.LAZY)
     private List<Customer> customers = new ArrayList<>();
 
