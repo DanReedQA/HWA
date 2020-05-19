@@ -49,6 +49,7 @@
 
         <div class="container">
             <label for="newUname"><b>Username</b></label>
+            <input id="yourId" type="text" placeholder="Enter Your ID" name="yourId" required>
             <input id="newUname" type="text" placeholder="New Username" name="newUname" required>
             <button id="account" type="button">Change Username</button>
         </div>
@@ -84,12 +85,12 @@
         </div>
 
         <div class="container">
-            <label for="usersOnline"><b>Current Users Online</b></label>
-// ---- Show current users
+            <label for="online"><b>Current Users Online</b></label>
+    <!-- Show current users -->
+            <button id="refresh" type="button">Refresh</button>
             <button type="button" onclick="document.getElementById('id08').style.display='none'">Close</button>
         </div>
     </form>
-</div>
 </div>
 <!-- Tab links -->
 <div class="tab">
@@ -196,11 +197,12 @@
         </form>
 
     <!-- Scripts -->
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="static/html/js/index.js"></script>
-    <script src="static/html/js/createCustomer.js"></script>
-        <script src="static/html/js/deleteCustomer.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="static/html/js/index.js"></script>
+        <script src="static/html/js/createCustomer.js"></script>
+        <script src="static/html/js/getCustomers.js"></script>
         <script src="static/html/js/updateCustomer.js"></script>
+        <script src="static/html/js/deleteCustomer.js"></script>
 
 </body>
 </html>

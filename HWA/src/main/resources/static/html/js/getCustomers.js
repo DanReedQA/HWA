@@ -1,7 +1,5 @@
 const REQ = new XMLHttpRequest();
 
-const idToDelete = document.getElementById("online").value;
-
 function getCustomers() {
     REQ.onload = () => {
         if (REQ.status === 200) {
@@ -22,5 +20,5 @@ function getCustomers() {
     REQ.send();
 }
 
-let showCustomersButt = document.querySelector('#online');
+let showCustomersButt = document.querySelector('#refresh');
 showCustomersButt.addEventListener("click", getCustomers);

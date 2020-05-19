@@ -17,6 +17,7 @@ const customerToDelete = () => {
         })
         .catch(function (response) {
             console.log(response);
+            modal.style.display = "none";
         })
 }
 
