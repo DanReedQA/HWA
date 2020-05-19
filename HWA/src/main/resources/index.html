@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Index</title>
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="static/html/css/index.css">
 </head>
 <body>
 <div id="header">
-    <img src="img/kc.png" alt="logo">
+    <img src="static/html/img/kc.png" alt="logo">
     <h1>kaiba Corp Card Shop</h1>
 
     <!-- Button to open the modal login form -->
@@ -20,13 +20,13 @@
         <!-- Modal Content -->
         <form class="modal-content animate">
             <div class="imgcontainer">
-                <img src="img/kaiba.png" alt="Avatar" class="avatar" width="128.5" height="111.5">
+                <img src="static/html/img/kaiba.png" alt="Avatar" class="avatar" width="128.5" height="111.5">
             </div>
 
             <div class="container">
                 <label for="uname"><b>Username</b></label>
                 <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
-                <button id="login" type="submit">Login</button>
+                <button id="login" type="button">Login</button>
             </div>
         </form>
     </div>
@@ -45,7 +45,7 @@
     <p>Content For Box One</p>
     <br>
     <!-- Button to open card1 -->
-    <img src="img/blueyes.jpg" alt="blue-eyes" width="174" height="250" onclick="document.getElementById('id02').style.display='block'">
+    <img src="static/html/img/blueyes.jpg" alt="blue-eyes" width="174" height="250" onclick="document.getElementById('id02').style.display='block'">
     <!-- The Modal -->
     <div id="id02" class="modal">
   <span onclick="document.getElementById('id02').style.display='none'"
@@ -53,14 +53,13 @@
         <!-- Modal Content -->
         <form class="modal-content animate">
             <div class="imgcontainer">
-                <img src="img/blueyes.jpg" alt="blue-eyes" class="avatar" width="348" height="500">
+                <img src="static/html/img/blueyes.jpg" alt="blue-eyes" class="avatar" width="348" height="500">
             </div>
 
             <div class="container">
                 <h3>Blue Eyes White Dragon</h3>
                 <h3>Price: 400</h3>
             </div>
-
             <div class="container" style="background-color:#f1f1f1">
                 <button type="button" onclick="document.getElementById('id02').style.display='none'" class="buybtn">Purchase</button>
             </div>
@@ -78,19 +77,19 @@
     <div class="click-zoom">
         <label>
             <input type="checkbox">
-            <img src="img/darkmagician.jpg" alt="dark-magician" width="174" height="250">
+            <img src="static/html/img/darkmagician.jpg" alt="dark-magician" width="174" height="250">
         </label>
     </div>
     <div class="click-zoom">
         <label>
             <input type="checkbox">
-            <img src="img/darkmagician.jpg" alt="dark-magician" width="174" height="250">
+            <img src="static/html/img/darkmagician.jpg" alt="dark-magician" width="174" height="250">
         </label>
     </div>
     <div class="click-zoom">
         <label>
             <input type="checkbox">
-            <img src="img/darkmagician.jpg" alt="dark-magician" width="174" height="250">
+            <img src="static/html/img/darkmagician.jpg" alt="dark-magician" width="174" height="250">
         </label>
     </div>
 </div>
@@ -103,31 +102,31 @@
     <div class="click-zoom">
         <label>
             <input type="checkbox">
-            <img src="img/redeyes.jpg" alt="red-eyes" width="174" height="250">
+            <img src="static/html/img/redeyes.jpg" alt="red-eyes" width="174" height="250">
         </label>
     </div>
     <div class="click-zoom">
         <label>
             <input type="checkbox">
-            <img src="img/redeyes.jpg" alt="red-eyes" width="174" height="250">
+            <img src="static/html/img/redeyes.jpg" alt="red-eyes" width="174" height="250">
         </label>
     </div>
     <div class="click-zoom">
         <label>
             <input type="checkbox">
-            <img src="img/redeyes.jpg" alt="red-eyes" width="174" height="250">
+            <img src="static/html/img/redeyes.jpg" alt="red-eyes" width="174" height="250">
         </label>
     </div>
     <div class="click-zoom">
         <label>
             <input type="checkbox">
-            <img src="img/redeyes.jpg" alt="red-eyes" width="174" height="250">
+            <img src="static/html/img/redeyes.jpg" alt="red-eyes" width="174" height="250">
         </label>
     </div>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="js/index.js"></script>
-    <script src="js/createCustomer.js"></script>
+    <script src="static/html/js/index.js"></script>
+    <script src="static/html/js/createCustomer.js"></script>
 </body>
 </html>

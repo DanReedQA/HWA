@@ -14,6 +14,8 @@ const createUser = () => {
     })
         .then(function (response) {
             console.log(response);
+            modal.style.display = "none";
+            window.alert("logged in");
         })
         .catch(function (response) {
             console.log(response);
