@@ -47,9 +47,4 @@ public class CardController {
         return ResponseEntity.ok(this.service.updateCard(cardId, card));
     }
 
-//    @PutMapping("/updateCard2")
-//    public ResponseEntity<CardDTO> updateCard2(@PathParam("cardId") Long cardId, @RequestBody Card card) {
-//        return ResponseEntity.ok(this.service.updateCard(cardId, card));
-//    }
-
 }

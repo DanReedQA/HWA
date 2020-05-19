@@ -1,6 +1,8 @@
 package com.qa.service;
 
+import com.qa.domain.Box;
 import com.qa.domain.Customer;
+import com.qa.dto.BoxDTO;
 import com.qa.dto.CustomerDTO;
 import com.qa.exceptions.CustomerNotFoundException;
 import com.qa.repo.CustomersRepository;
@@ -94,22 +96,22 @@ public class CustomerServiceUnitTest {
         verify(repository, times(1)).existsById(customerId);
     }
 
-//    @Test
-//    public void updateNoteTest(){
-//
-//        Note newNote = new Note("Favourite movies", "The grinch");
-//        Note updateNote = new Note(newNote.getTitle(), newNote.getDescription());
-//        updateNote.setId(id);
-//
-//        NoteDTO updateNoteDTO = new ModelMapper().map(updateNote, NoteDTO.class);
-//
-//        when(this.repository.findById(id)).thenReturn(java.util.Optional.ofNullable(testNoteWithID));
-//        when(this.repository.save(updateNote)).thenReturn(updateNote);
-//        when(this.mapper.map(updateNote, NoteDTO.class)).thenReturn(updateNoteDTO);
-//
-//        assertEquals(updateNoteDTO, this.service.updateNote(id, newNote));
-//        verify(this.repository, times(1)).findById(id);
-//        verify(this.repository, times(1)).save(updateNote);
-//    }
+    @Test
+    public void updateCustomerTest(){
+
+        Customer newCustomer = new Customer("admin");
+        Customer updateCustomer = new Customer(newCustomer.getUsername());
+        updateCustomer.setCustomerId(customerId);
+
+        CustomerDTO updateCustomerDTO = new ModelMapper().map(updateCustomer, CustomerDTO.class);
+
+        when(this.repository.findById(customerId)).thenReturn(java.util.Optional.ofNullable(testCustomerWithID));
+        when(this.repository.save(updateCustomer)).thenReturn(updateCustomer);
+        when(this.mapper.map(updateCustomer, CustomerDTO.class)).thenReturn(updateCustomerDTO);
+
+        assertEquals(updateCustomerDTO, this.service.updateCustomer(customerId, newCustomer));
+        verify(this.repository, times(1)).findById(customerId);
+        verify(this.repository, times(1)).save(updateCustomer);
+    }
 
 }

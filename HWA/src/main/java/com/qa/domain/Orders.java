@@ -15,7 +15,11 @@ public class Orders {
     @OneToMany (mappedBy = "orders", fetch = FetchType.LAZY)
     private List<Customer> customers = new ArrayList<>();
 
+    public Orders(Long orderId) {
+    }
+
     public Orders() {
+
     }
 
     public Long getOrderId() {

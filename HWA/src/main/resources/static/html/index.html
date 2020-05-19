@@ -2,30 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Index</title>
-    <link rel="stylesheet" type="text/css" href="static/html/css/index.css">
+    <title>Kaiba Corp Card Shop</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
+
 <div id="header">
-    <img src="static/html/img/kc.png" alt="logo">
+    <img src="img/kc.png" alt="logo">
     <h1>kaiba Corp Card Shop</h1>
 
-    <!-- Button to open the modal login form -->
+    <!-- Buttons to open forms /////////////////////////////////////////////////////////////////-->
     <button onclick="document.getElementById('id01').style.display='block'">Login</button>
     <button onclick="document.getElementById('id08').style.display='block'">Online</button>
     <button onclick="document.getElementById('id06').style.display='block'">Account</button>
     <button onclick="document.getElementById('id07').style.display='block'">Logout</button>
     <br>
     <br>
-    <!-- The Modal -->
+
+    <!-- Login Form/////////////////////////////////////////////////////////////////////// -->
     <div id="id01" class="modal">
   <span onclick="document.getElementById('id01').style.display='none'"
         class="close" title="Close Modal">&times;</span>
 
-        <!-- Modal Content -->
         <form class="modal-content animate">
             <div class="imgcontainer">
-                <img src="static/html/img/kaiba.png" alt="Avatar" class="avatar" width="128.5" height="111.5">
+                <img src="img/kaiba.png" alt="Avatar" class="avatar" width="128.5" height="111.5">
             </div>
 
             <div class="container">
@@ -36,15 +37,15 @@
         </form>
     </div>
 </div>
-<!-- The Modal -->
+
+    <!-- Change Username Form/////////////////////////////////////////////////////////////////////// -->
 <div id="id06" class="modal">
   <span onclick="document.getElementById('id06').style.display='none'"
         class="close" title="Close Modal">&times;</span>
 
-    <!-- Modal Content -->
     <form class="modal-content animate">
         <div class="imgcontainer">
-            <img src="static/html/img/kaiba.png" alt="Avatar" class="avatar" width="128.5" height="111.5">
+            <img src="img/kaiba.png" alt="Avatar" class="avatar" width="128.5" height="111.5">
         </div>
 
         <div class="container">
@@ -55,15 +56,15 @@
         </div>
     </form>
 </div>
-<!-- The Modal -->
+
+    <!-- Logout Form/////////////////////////////////////////////////////////////////////// -->
 <div id="id07" class="modal">
   <span onclick="document.getElementById('id07').style.display='none'"
         class="close" title="Close Modal">&times;</span>
 
-    <!-- Modal Content -->
     <form class="modal-content animate">
         <div class="imgcontainer">
-            <img src="static/html/img/kaiba.png" alt="Avatar" class="avatar" width="128.5" height="111.5">
+            <img src="img/kaiba.png" alt="Avatar" class="avatar" width="128.5" height="111.5">
         </div>
 
         <div class="container">
@@ -73,25 +74,26 @@
         </div>
     </form>
 </div>
-<!-- The Modal -->
+
+    <!-- Online Users Form/////////////////////////////////////////////////////////////////////// -->
 <div id="id08" class="modal">
   <span onclick="document.getElementById('id08').style.display='none'"
         class="close" title="Close Modal">&times;</span>
 
-    <!-- Modal Content -->
     <form class="modal-content animate">
         <div class="imgcontainer">
-            <img src="static/html/img/kaiba.png" alt="Avatar" class="avatar" width="128.5" height="111.5">
+            <img src="img/kaiba.png" alt="Avatar" class="avatar" width="128.5" height="111.5">
         </div>
 
         <div class="container">
             <label for="online"><b>Current Users Online</b></label>
-    <!-- Show current users -->
+             <!-- Show current users -->
             <button id="refresh" type="button">Refresh</button>
             <button type="button" onclick="document.getElementById('id08').style.display='none'">Close</button>
         </div>
     </form>
 </div>
+
 <!-- Tab links -->
 <div class="tab">
     <button class="tablinks" onclick="openBox(event, 'Box One')">Kaiba Starter Deck</button>
@@ -99,13 +101,13 @@
     <button class="tablinks" onclick="openBox(event, 'Box Three')">Joey Starter Deck</button>
 </div>
 
-<!-- Tab content -->
+<!-- Tab 1 content /////////////////////////////////////////////////////////////////// -->
 <div id="Box One" class="tabcontent">
     <h3>Kaiba Starter Deck</h3>
     <p>“Me? Duel you? I’d have more of a challenge playing solitaire”</p>
     <br>
     <!-- Button to open card1 -->
-    <img src="static/html/img/blueyes.jpg" alt="blue-eyes" width="174" height="250" onclick="document.getElementById('id02').style.display='block'">
+    <img src="img/blueyes.jpg" alt="blue-eyes" width="174" height="250" onclick="document.getElementById('id02').style.display='block'">
     <!-- The Modal -->
     <div id="id02" class="modal">
   <span onclick="document.getElementById('id02').style.display='none'"
@@ -113,7 +115,7 @@
         <!-- Modal Content -->
         <form class="modal-content animate">
             <div class="imgcontainer">
-                <img src="static/html/img/blueyes.jpg" alt="blue-eyes" class="avatar" width="348" height="500">
+                <img src="img/blueyes.jpg" alt="blue-eyes" class="avatar" width="348" height="500">
             </div>
             <div class="container">
                 <h3>Blue Eyes White Dragon</h3>
@@ -128,7 +130,7 @@
         </form>
     </div>
     <!-- Button to open card2 -->
-    <img src="static/html/img/lordofd.png" alt="lord-of-d" width="174" height="250" onclick="document.getElementById('id03').style.display='block'">
+    <img src="img/lordofd.png" alt="lord-of-d" width="174" height="250" onclick="document.getElementById('id03').style.display='block'">
     <!-- The Modal -->
     <div id="id03" class="modal">
   <span onclick="document.getElementById('id03').style.display='none'"
@@ -136,7 +138,7 @@
         <!-- Modal Content -->
         <form class="modal-content animate">
             <div class="imgcontainer">
-                <img src="static/html/img/lordofd.png" alt="lord-of-d" class="avatar" width="348" height="500">
+                <img src="img/lordofd.png" alt="lord-of-d" class="avatar" width="348" height="500">
             </div>
             <div class="container">
                 <h3>Lord of D.</h3>
@@ -151,7 +153,7 @@
         </form>
     </div>
     <!-- Button to open card3 -->
-    <img src="static/html/img/polymerization.png" alt="poly" width="174" height="250" onclick="document.getElementById('id04').style.display='block'">
+    <img src="img/polymerization.png" alt="poly" width="174" height="250" onclick="document.getElementById('id04').style.display='block'">
     <!-- The Modal -->
     <div id="id04" class="modal">
   <span onclick="document.getElementById('id04').style.display='none'"
@@ -159,7 +161,7 @@
         <!-- Modal Content -->
         <form class="modal-content animate">
             <div class="imgcontainer">
-                <img src="static/html/img/polymerization.png" alt="poly" class="avatar" width="348" height="500">
+                <img src="img/polymerization.png" alt="poly" class="avatar" width="348" height="500">
             </div>
             <div class="container">
                 <h3>Polymerization</h3>
@@ -174,7 +176,7 @@
         </form>
     </div>
     <!-- Button to open card4 -->
-    <img src="static/html/img/blueyesulti.jpg" alt="blue-eyes-ulti" width="174" height="250" onclick="document.getElementById('id05').style.display='block'">
+    <img src="img/blueyesulti.jpg" alt="blue-eyes-ulti" width="174" height="250" onclick="document.getElementById('id05').style.display='block'">
     <!-- The Modal -->
     <div id="id05" class="modal">
   <span onclick="document.getElementById('id05').style.display='none'"
@@ -182,7 +184,7 @@
         <!-- Modal Content -->
         <form class="modal-content animate">
             <div class="imgcontainer">
-                <img src="static/html/img/blueyesulti.jpg" alt="blue-eyes-ulti" class="avatar" width="348" height="500">
+                <img src="img/blueyesulti.jpg" alt="blue-eyes-ulti" class="avatar" width="348" height="500">
             </div>
             <div class="container">
                 <h3>Blue Eyes Ultimate Dragon</h3>
@@ -197,13 +199,13 @@
         </form>
     </div>
 </div>
-<!-- Tab content -->
+<!-- Tab 2 content /////////////////////////////////////////////////////////////////////// -->
 <div id="Box Two" class="tabcontent">
     <h3>Yugi Starter Deck</h3>
     <p>“Believe in the Heart of the Cards”</p>
     <br>
     <!-- Button to open card1 -->
-    <img src="static/html/img/darkmagician.jpg" alt="dark-mag" width="174" height="250" onclick="document.getElementById('id13').style.display='block'">
+    <img src="img/darkmagician.jpg" alt="dark-mag" width="174" height="250" onclick="document.getElementById('id13').style.display='block'">
     <!-- The Modal -->
     <div id="id13" class="modal">
   <span onclick="document.getElementById('id13').style.display='none'"
@@ -211,7 +213,7 @@
         <!-- Modal Content -->
         <form class="modal-content animate">
             <div class="imgcontainer">
-                <img src="static/html/img/darkmagician.jpg" alt="dark-mag" class="avatar" width="348" height="500">
+                <img src="img/darkmagician.jpg" alt="dark-mag" class="avatar" width="348" height="500">
             </div>
             <div class="container">
                 <h3>Dark Magician</h3>
@@ -226,7 +228,7 @@
         </form>
     </div>
     <!-- Button to open card2 -->
-    <img src="static/html/img/potofgreed.png" alt="pot-of-geeed" width="174" height="250" onclick="document.getElementById('id14').style.display='block'">
+    <img src="img/potofgreed.png" alt="pot-of-geeed" width="174" height="250" onclick="document.getElementById('id14').style.display='block'">
     <!-- The Modal -->
     <div id="id14" class="modal">
   <span onclick="document.getElementById('id14').style.display='none'"
@@ -234,7 +236,7 @@
         <!-- Modal Content -->
         <form class="modal-content animate">
             <div class="imgcontainer">
-                <img src="static/html/img/potofgreed.png" alt="pot-of-greed" class="avatar" width="348" height="500">
+                <img src="img/potofgreed.png" alt="pot-of-greed" class="avatar" width="348" height="500">
             </div>
             <div class="container">
                 <h3>Pot of Greed</h3>
@@ -249,7 +251,7 @@
         </form>
     </div>
     <!-- Button to open card3 -->
-    <img src="static/html/img/kuribo.png" alt="kuribo" width="174" height="250" onclick="document.getElementById('id15').style.display='block'">
+    <img src="img/kuribo.png" alt="kuribo" width="174" height="250" onclick="document.getElementById('id15').style.display='block'">
     <!-- The Modal -->
     <div id="id15" class="modal">
   <span onclick="document.getElementById('id15').style.display='none'"
@@ -257,7 +259,7 @@
         <!-- Modal Content -->
         <form class="modal-content animate">
             <div class="imgcontainer">
-                <img src="static/html/img/kuribo.png" alt="kuribo" class="avatar" width="348" height="500">
+                <img src="img/kuribo.png" alt="kuribo" class="avatar" width="348" height="500">
             </div>
             <div class="container">
                 <h3>Kuribo</h3>
@@ -272,7 +274,7 @@
         </form>
     </div>
     <!-- Button to open card4 -->
-    <img src="static/html/img/exodiaarm.jpg" alt="exodia" width="174" height="250" onclick="document.getElementById('id16').style.display='block'">
+    <img src="img/exodiaarm.jpg" alt="exodia" width="174" height="250" onclick="document.getElementById('id16').style.display='block'">
     <!-- The Modal -->
     <div id="id16" class="modal">
   <span onclick="document.getElementById('id16').style.display='none'"
@@ -280,7 +282,7 @@
         <!-- Modal Content -->
         <form class="modal-content animate">
             <div class="imgcontainer">
-                <img src="static/html/img/exodiaarm.jpg" alt="exodia" class="avatar" width="348" height="500">
+                <img src="img/exodiaarm.jpg" alt="exodia" class="avatar" width="348" height="500">
             </div>
             <div class="container">
                 <h3>Right Arm of the Forbidden One</h3>
@@ -295,13 +297,13 @@
         </form>
     </div>
 </div>
-<!-- Tab content -->
+<!-- Tab 3 content //////////////////////////////////////////////////////////////////////////// -->
 <div id="Box Three" class="tabcontent">
     <h3>Joey Starter Deck</h3>
     <p>"I'm the Godfather of Games. Capsice?"</p>
     <br>
     <!-- Button to open card1 -->
-    <img src="static/html/img/redeyes.jpg" alt="red-eyes" width="174" height="250" onclick="document.getElementById('id09').style.display='block'">
+    <img src="img/redeyes.jpg" alt="red-eyes" width="174" height="250" onclick="document.getElementById('id09').style.display='block'">
     <!-- The Modal -->
     <div id="id09" class="modal">
   <span onclick="document.getElementById('id09').style.display='none'"
@@ -309,7 +311,7 @@
         <!-- Modal Content -->
         <form class="modal-content animate">
             <div class="imgcontainer">
-                <img src="static/html/img/redeyes.jpg" alt="red-eyes" class="avatar" width="348" height="500">
+                <img src="img/redeyes.jpg" alt="red-eyes" class="avatar" width="348" height="500">
             </div>
             <div class="container">
                 <h3>Red Eyes B. Dragon</h3>
@@ -324,7 +326,7 @@
         </form>
     </div>
     <!-- Button to open card2 -->
-    <img src="static/html/img/flameswordsman.jpg" alt="flame swordsman" width="174" height="250" onclick="document.getElementById('id10').style.display='block'">
+    <img src="img/flameswordsman.jpg" alt="flame swordsman" width="174" height="250" onclick="document.getElementById('id10').style.display='block'">
     <!-- The Modal -->
     <div id="id10" class="modal">
   <span onclick="document.getElementById('id10').style.display='none'"
@@ -332,7 +334,7 @@
         <!-- Modal Content -->
         <form class="modal-content animate">
             <div class="imgcontainer">
-                <img src="static/html/img/flameswordsman.jpg" alt="flame swordsman" class="avatar" width="348" height="500">
+                <img src="img/flameswordsman.jpg" alt="flame swordsman" class="avatar" width="348" height="500">
             </div>
             <div class="container">
                 <h3>Flame Swordsman</h3>
@@ -347,7 +349,7 @@
         </form>
     </div>
     <!-- Button to open card3 -->
-    <img src="static/html/img/alligsword.png" alt="alli-sword" width="174" height="250" onclick="document.getElementById('id11').style.display='block'">
+    <img src="img/alligsword.png" alt="alli-sword" width="174" height="250" onclick="document.getElementById('id11').style.display='block'">
     <!-- The Modal -->
     <div id="id11" class="modal">
   <span onclick="document.getElementById('id11').style.display='none'"
@@ -355,7 +357,7 @@
         <!-- Modal Content -->
         <form class="modal-content animate">
             <div class="imgcontainer">
-                <img src="static/html/img/alligsword.png" alt="alli-sword" class="avatar" width="348" height="500">
+                <img src="img/alligsword.png" alt="alli-sword" class="avatar" width="348" height="500">
             </div>
             <div class="container">
                 <h3>Alligator's Sword</h3>
@@ -370,7 +372,7 @@
         </form>
     </div>
     <!-- Button to open card4 -->
-    <img src="static/html/img/babydragon.png" alt="baby-dragon" width="174" height="250" onclick="document.getElementById('id12').style.display='block'">
+    <img src="img/babydragon.png" alt="baby-dragon" width="174" height="250" onclick="document.getElementById('id12').style.display='block'">
     <!-- The Modal -->
     <div id="id12" class="modal">
   <span onclick="document.getElementById('id12').style.display='none'"
@@ -378,7 +380,7 @@
         <!-- Modal Content -->
         <form class="modal-content animate">
             <div class="imgcontainer">
-                <img src="static/html/img/babydragon.png" alt="baby-dragon" class="avatar" width="348" height="500">
+                <img src="img/babydragon.png" alt="baby-dragon" class="avatar" width="348" height="500">
             </div>
             <div class="container">
                 <h3>Baby Dragon</h3>
@@ -393,13 +395,14 @@
         </form>
     </div>
 </div>
-    <!-- Scripts -->
+
+    <!-- Scripts //////////////////////////////////////////////////////////////// -->
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-        <script src="static/html/js/index.js"></script>
-        <script src="static/html/js/createCustomer.js"></script>
-        <script src="static/html/js/getCustomers.js"></script>
-        <script src="static/html/js/updateCustomer.js"></script>
-        <script src="static/html/js/deleteCustomer.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/createCustomer.js"></script>
+        <script src="js/getCustomers.js"></script>
+        <script src="js/updateCustomer.js"></script>
+        <script src="js/deleteCustomer.js"></script>
 
 </body>
 </html>

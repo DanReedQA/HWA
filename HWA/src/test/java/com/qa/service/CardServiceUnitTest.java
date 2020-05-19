@@ -1,6 +1,8 @@
 package com.qa.service;
 
+import com.qa.domain.Box;
 import com.qa.domain.Card;
+import com.qa.dto.BoxDTO;
 import com.qa.dto.CardDTO;
 import com.qa.exceptions.CardNotFoundException;
 import com.qa.repo.CardsRepository;
@@ -94,22 +96,22 @@ public class CardServiceUnitTest {
         verify(repository, times(1)).existsById(cardId);
     }
 
-//    @Test
-//    public void updateNoteTest(){
-//
-//        Note newNote = new Note("Favourite movies", "The grinch");
-//        Note updateNote = new Note(newNote.getTitle(), newNote.getDescription());
-//        updateNote.setId(id);
-//
-//        NoteDTO updateNoteDTO = new ModelMapper().map(updateNote, NoteDTO.class);
-//
-//        when(this.repository.findById(id)).thenReturn(java.util.Optional.ofNullable(testNoteWithID));
-//        when(this.repository.save(updateNote)).thenReturn(updateNote);
-//        when(this.mapper.map(updateNote, NoteDTO.class)).thenReturn(updateNoteDTO);
-//
-//        assertEquals(updateNoteDTO, this.service.updateNote(id, newNote));
-//        verify(this.repository, times(1)).findById(id);
-//        verify(this.repository, times(1)).save(updateNote);
-//    }
+    @Test
+    public void updateCardTest(){
+
+        Card newCard = new Card("card2", 7L);
+        Card updateCard = new Card(newCard.getCardName(),newCard.getValue());
+        updateCard.setCardId(cardId);
+
+        CardDTO updateCardDTO = new ModelMapper().map(updateCard, CardDTO.class);
+
+        when(this.repository.findById(cardId)).thenReturn(java.util.Optional.ofNullable(testCardWithID));
+        when(this.repository.save(updateCard)).thenReturn(updateCard);
+        when(this.mapper.map(updateCard, CardDTO.class)).thenReturn(updateCardDTO);
+
+        assertEquals(updateCardDTO, this.service.updateCard(cardId, newCard));
+        verify(this.repository, times(1)).findById(cardId);
+        verify(this.repository, times(1)).save(updateCard);
+    }
 
 }
