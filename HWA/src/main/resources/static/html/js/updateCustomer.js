@@ -1,12 +1,12 @@
 
 const updateCustomer = () => {
-    let username = document.getElementById("uname").value;
+    let username = document.getElementById("newUname").value;
 
     axios({
         method: 'put',
         headers: {"Access-Control-Allow-Origin": "*"},
         headers: {'content-Type': 'application/json'},
-        url: 'http://localhost:8181/customer/updateCustomer//${idToDelete}',
+        url: 'http://localhost:8181/customer/updateCustomer/${sessionStorage.currentUserID}',
         data: {
             "username" : username
         },

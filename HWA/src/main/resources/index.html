@@ -12,9 +12,9 @@
 
     <!-- Button to open the modal login form -->
     <button onclick="document.getElementById('id01').style.display='block'">Login</button>
-    <button id="online" type="button">Online</button>
-    <button id="account" type="button">Account</button>
-    <button id="logout" type="button">Logout</button>
+    <button onclick="document.getElementById('id08').style.display='block'">Online</button>
+    <button onclick="document.getElementById('id06').style.display='block'">Account</button>
+    <button onclick="document.getElementById('id07').style.display='block'">Logout</button>
     <br>
     <br>
     <!-- The Modal -->
@@ -36,7 +36,61 @@
         </form>
     </div>
 </div>
+<!-- The Modal -->
+<div id="id06" class="modal">
+  <span onclick="document.getElementById('id06').style.display='none'"
+        class="close" title="Close Modal">&times;</span>
 
+    <!-- Modal Content -->
+    <form class="modal-content animate">
+        <div class="imgcontainer">
+            <img src="static/html/img/kaiba.png" alt="Avatar" class="avatar" width="128.5" height="111.5">
+        </div>
+
+        <div class="container">
+            <label for="newUname"><b>Username</b></label>
+            <input id="newUname" type="text" placeholder="New Username" name="newUname" required>
+            <button id="account" type="button">Change Username</button>
+        </div>
+    </form>
+</div>
+<!-- The Modal -->
+<div id="id07" class="modal">
+  <span onclick="document.getElementById('id07').style.display='none'"
+        class="close" title="Close Modal">&times;</span>
+
+    <!-- Modal Content -->
+    <form class="modal-content animate">
+        <div class="imgcontainer">
+            <img src="static/html/img/kaiba.png" alt="Avatar" class="avatar" width="128.5" height="111.5">
+        </div>
+
+        <div class="container">
+            <label for="id"><b>ID</b></label>
+            <input id="customerId" type="text" placeholder="Enter ID" name="customerId" required>
+            <button id="id" type="button">Logout</button>
+        </div>
+    </form>
+</div>
+<!-- The Modal -->
+<div id="id08" class="modal">
+  <span onclick="document.getElementById('id08').style.display='none'"
+        class="close" title="Close Modal">&times;</span>
+
+    <!-- Modal Content -->
+    <form class="modal-content animate">
+        <div class="imgcontainer">
+            <img src="static/html/img/kaiba.png" alt="Avatar" class="avatar" width="128.5" height="111.5">
+        </div>
+
+        <div class="container">
+            <label for="usersOnline"><b>Current Users Online</b></label>
+// ---- Show current users
+            <button type="button" onclick="document.getElementById('id08').style.display='none'">Close</button>
+        </div>
+    </form>
+</div>
+</div>
 <!-- Tab links -->
 <div class="tab">
     <button class="tablinks" onclick="openBox(event, 'Box One')">Kaiba Starter Deck</button>

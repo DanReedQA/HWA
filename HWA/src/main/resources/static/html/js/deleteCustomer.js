@@ -1,16 +1,14 @@
-const REQ = new XMLHttpRequest();
-let deleteCustomer = document.querySelector("#logout");
 
-function userToDelete() {
+const customerToDelete = () => {
 
-    const idToDelete = document.getElementById("logout").value;
+        let id = document.getElementById("customerId").value;
 
-    axios({
+    axios ({
         method: 'delete',
         headers: {"Access-Control-Allow-Origin": "*"},
         headers: {'content-Type': 'application/json'},
-        url: 'http://localhost:8181/customer/deleteCustomer/${idToDelete}',
-        data: {}
+        url: 'http://localhost:8181/customer/deleteCustomer/${id}',
+        data: {},
     })
         .then(function (response) {
             console.log(response);
@@ -20,5 +18,6 @@ function userToDelete() {
             console.log(response);
         })
 }
-let buttDeleteUser = document.querySelector('#logout');
-buttDeleteUser.addEventListener('click', userToDelete);
+
+let deleteCustomer = document.querySelector("#id");
+deleteCustomer.addEventListener('click', customerToDelete);

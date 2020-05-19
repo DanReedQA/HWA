@@ -1,4 +1,6 @@
 
+const REQ = new XMLHttpRequest();
+
 const createUser = () => {
     let username = document.getElementById("uname").value;
 
@@ -10,10 +12,17 @@ const createUser = () => {
         data: {
             "username" : username
         },
-
     })
         .then(function (response) {
             console.log(response);
+            console.dir(REQ);
+            let responseObject = REQ.response;
+            sessionStorage.setItem('currentUser', JSON.stringify(responseObject));
+            let currentUser = JSON.parse(sessionStorage.getItem('currentUser'));
+            sessionStorage.setItem('currentUserId', currentUser.id);
+            let currentUserId = sessionStorage.getItem('currentUserId');
+            console.log(currentUser);
+            console.log(currentUserId)
             modal.style.display = "none";
             window.alert("logged in");
         })
