@@ -12,6 +12,7 @@ import javax.websocket.server.PathParam;
 import java.util.List;
 
 @RestController
+@CrossOrigin
 @RequestMapping("/customer")
 public class CustomerController {
 

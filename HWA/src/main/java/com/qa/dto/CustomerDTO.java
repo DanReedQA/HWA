@@ -22,12 +22,12 @@ public class CustomerDTO {
         this.customerId = customerId;
     }
 
-    public String getFirstName() {
+    public String getUsername() {
         return username;
     }
 
-    public void setFirstName(String firstName) {
-        this.username = firstName;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     @Override
@@ -36,11 +36,11 @@ public class CustomerDTO {
         if (!(o instanceof CustomerDTO)) return false;
         CustomerDTO that = (CustomerDTO) o;
         return Objects.equals(getCustomerId(), that.getCustomerId()) &&
-                Objects.equals(getFirstName(), that.getFirstName());
+                Objects.equals(getUsername(), that.getUsername());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getCustomerId(), getFirstName());
+        return Objects.hash(getCustomerId(), getUsername());
     }
 }

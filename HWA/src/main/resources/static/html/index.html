@@ -8,11 +8,10 @@
 <body>
 <div id="header">
     <img src="img/kc.png" alt="logo">
-    <h1>kiaba Corp Card Shop</h1>
+    <h1>kaiba Corp Card Shop</h1>
 
     <!-- Button to open the modal login form -->
     <button onclick="document.getElementById('id01').style.display='block'">Login</button>
-
     <!-- The Modal -->
     <div id="id01" class="modal">
   <span onclick="document.getElementById('id01').style.display='none'"
@@ -26,17 +25,11 @@
 
             <div class="container">
                 <label for="uname"><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="uname" required>
-                <button type="submit">Login</button>
-            </div>
-
-            <div class="container" style="background-color:#f1f1f1">
-                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                <span class="psw">Forgot <a href="#">password?</a></span>
+                <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
+                <button id="login" type="submit">Login</button>
             </div>
         </form>
     </div>
-
 </div>
 
 <!-- Tab links -->
@@ -100,12 +93,6 @@
             <img src="img/darkmagician.jpg" alt="dark-magician" width="174" height="250">
         </label>
     </div>
-    <div class="click-zoom">
-        <label>
-            <input type="checkbox">
-            <img src="img/darkmagician.jpg" alt="dark-magician" width="174" height="250">
-        </label>
-    </div>
 </div>
 
 <div id="Box Three" class="tabcontent">
@@ -139,6 +126,8 @@
     </div>
 
     <!-- Scripts -->
-<script src="js/index.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/createCustomer.js"></script>
 </body>
 </html>
