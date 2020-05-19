@@ -12,6 +12,11 @@
 
     <!-- Button to open the modal login form -->
     <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+    <button id="online" type="button">Online</button>
+    <button id="account" type="button">Account</button>
+    <button id="logout" type="button">Logout</button>
+    <br>
+    <br>
     <!-- The Modal -->
     <div id="id01" class="modal">
   <span onclick="document.getElementById('id01').style.display='none'"
@@ -34,15 +39,15 @@
 
 <!-- Tab links -->
 <div class="tab">
-    <button class="tablinks" onclick="openBox(event, 'Box One')">Box One</button>
-    <button class="tablinks" onclick="openBox(event, 'Box Two')">Box Two</button>
-    <button class="tablinks" onclick="openBox(event, 'Box Three')">Box Three</button>
+    <button class="tablinks" onclick="openBox(event, 'Box One')">Kaiba Starter Deck</button>
+    <button class="tablinks" onclick="openBox(event, 'Box Two')">Yugi Starter Deck</button>
+    <button class="tablinks" onclick="openBox(event, 'Box Three')">Joey Starter Deck</button>
 </div>
 
 <!-- Tab content -->
 <div id="Box One" class="tabcontent">
-    <h3>Box One</h3>
-    <p>Content For Box One</p>
+    <h3>Kaiba Starter Deck</h3>
+    <p>“Me? Duel you? I’d have more of a challenge playing solitaire”</p>
     <br>
     <!-- Button to open card1 -->
     <img src="static/html/img/blueyes.jpg" alt="blue-eyes" width="174" height="250" onclick="document.getElementById('id02').style.display='block'">
@@ -55,7 +60,6 @@
             <div class="imgcontainer">
                 <img src="static/html/img/blueyes.jpg" alt="blue-eyes" class="avatar" width="348" height="500">
             </div>
-
             <div class="container">
                 <h3>Blue Eyes White Dragon</h3>
                 <h3>Price: 400</h3>
@@ -68,61 +72,74 @@
             </div>
         </form>
     </div>
-
-<div id="Box Two" class="tabcontent">
-    <h3>Box Two</h3>
-    <p>Content For Box Two</p>
-    <br>
-    <br>
-    <div class="click-zoom">
-        <label>
-            <input type="checkbox">
-            <img src="static/html/img/darkmagician.jpg" alt="dark-magician" width="174" height="250">
-        </label>
+    <!-- Button to open card2 -->
+    <img src="static/html/img/lordofd.png" alt="lord-of-d" width="174" height="250" onclick="document.getElementById('id03').style.display='block'">
+    <!-- The Modal -->
+    <div id="id03" class="modal">
+  <span onclick="document.getElementById('id03').style.display='none'"
+        class="close" title="Close Modal">&times;</span>
+        <!-- Modal Content -->
+        <form class="modal-content animate">
+            <div class="imgcontainer">
+                <img src="static/html/img/lordofd.png" alt="lord-of-d" class="avatar" width="348" height="500">
+            </div>
+            <div class="container">
+                <h3>Lord of D.</h3>
+                <h3>Price: 200</h3>
+            </div>
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id03').style.display='none'" class="buybtn">Purchase</button>
+            </div>
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
+            </div>
+        </form>
     </div>
-    <div class="click-zoom">
-        <label>
-            <input type="checkbox">
-            <img src="static/html/img/darkmagician.jpg" alt="dark-magician" width="174" height="250">
-        </label>
+    <!-- Button to open card3 -->
+    <img src="static/html/img/polymerization.png" alt="poly" width="174" height="250" onclick="document.getElementById('id04').style.display='block'">
+    <!-- The Modal -->
+    <div id="id04" class="modal">
+  <span onclick="document.getElementById('id04').style.display='none'"
+        class="close" title="Close Modal">&times;</span>
+        <!-- Modal Content -->
+        <form class="modal-content animate">
+            <div class="imgcontainer">
+                <img src="static/html/img/polymerization.png" alt="poly" class="avatar" width="348" height="500">
+            </div>
+            <div class="container">
+                <h3>Polymerization</h3>
+                <h3>Price: 275</h3>
+            </div>
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id04').style.display='none'" class="buybtn">Purchase</button>
+            </div>
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id04').style.display='none'" class="cancelbtn">Cancel</button>
+            </div>
+        </form>
     </div>
-    <div class="click-zoom">
-        <label>
-            <input type="checkbox">
-            <img src="static/html/img/darkmagician.jpg" alt="dark-magician" width="174" height="250">
-        </label>
-    </div>
-</div>
-
-<div id="Box Three" class="tabcontent">
-    <h3>Box Three</h3>
-    <p>Content For Box Three</p>
-    <br>
-    <br>
-    <div class="click-zoom">
-        <label>
-            <input type="checkbox">
-            <img src="static/html/img/redeyes.jpg" alt="red-eyes" width="174" height="250">
-        </label>
-    </div>
-    <div class="click-zoom">
-        <label>
-            <input type="checkbox">
-            <img src="static/html/img/redeyes.jpg" alt="red-eyes" width="174" height="250">
-        </label>
-    </div>
-    <div class="click-zoom">
-        <label>
-            <input type="checkbox">
-            <img src="static/html/img/redeyes.jpg" alt="red-eyes" width="174" height="250">
-        </label>
-    </div>
-    <div class="click-zoom">
-        <label>
-            <input type="checkbox">
-            <img src="static/html/img/redeyes.jpg" alt="red-eyes" width="174" height="250">
-        </label>
-    </div>
+    <!-- Button to open card4 -->
+    <img src="static/html/img/blueyesulti.jpg" alt="blue-eyes-ulti width="174" height="250" onclick="document.getElementById('id05').style.display='block'">
+    <!-- The Modal -->
+    <div id="id05" class="modal">
+  <span onclick="document.getElementById('id05').style.display='none'"
+        class="close" title="Close Modal">&times;</span>
+        <!-- Modal Content -->
+        <form class="modal-content animate">
+            <div class="imgcontainer">
+                <img src="static/html/img/blueyesulti.jpg" alt="blue-eyes-ulti" class="avatar" width="348" height="500">
+            </div>
+            <div class="container">
+                <h3>Blue Eyes Ultimate Dragon</h3>
+                <h3>Price: 475</h3>
+            </div>
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id05').style.display='none'" class="buybtn">Purchase</button>
+            </div>
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id05').style.display='none'" class="cancelbtn">Cancel</button>
+            </div>
+        </form>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>

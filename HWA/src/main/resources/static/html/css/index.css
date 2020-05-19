@@ -45,24 +45,24 @@
     to {opacity: 1;}
 }
 
-* {
-    box-sizing: border-box;
-}
-.click-zoom input[type=checkbox] {
-    display: none
-}
+/** {*/
+/*    box-sizing: border-box;*/
+/*}*/
+/*.click-zoom input[type=checkbox] {*/
+/*    display: none*/
+/*}*/
 
-.click-zoom img {
-    margin: 5px;
-    transition: transform 0.25s ease;
-    float: left;
-    cursor: zoom-in
-}
+/*.click-zoom img {*/
+/*    margin: 5px;*/
+/*    transition: transform 0.25s ease;*/
+/*    float: left;*/
+/*    cursor: zoom-in*/
+/*}*/
 
-.click-zoom input[type=checkbox]:checked~img {
-    transform: scale(2);
-    cursor: zoom-out
-}
+/*.click-zoom input[type=checkbox]:checked~img {*/
+/*    transform: scale(2);*/
+/*    cursor: zoom-out*/
+/*}*/
 
 html,
 body {
