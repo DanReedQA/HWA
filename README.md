@@ -16,10 +16,10 @@ src.main.resources > application.properties
 16> spring.datasource.url=<your MySQL instance url>
   
 4. Run the App file found in:
-src.main.java > App
+src\main\java\com\qa\App
 
 5. Open the index.html file found in:
-src.main.reasources.static.html> index.html
+src\main\reasources\static\html\index.html
 
 Use the website on the localhost:8181
 
@@ -35,13 +35,15 @@ Use the website on the localhost:8181
 
 Using JUnit and Mockito testing I tested the full functionality of each domain in the database and each of thier CRUD functions
 
+## Running the Tests
+
+Once you have pulled the code to your local IDE you can run the intergration tests by:
+(Example for Intellij)
+1. find the src/main/java folder right click on it and run tests with coverage to see the tests run and see a report of them with the code coverage 
+
 ## Built With
 
 * [Maven](https://maven.apache.org/) - Dependency Management
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning.
 
 ## Authors
 
@@ -59,5 +61,3 @@ This project is licensed under the MIT license - see the [LICENSE.md](LICENSE.md
 * **Savannah** - Software Trainer - [savannahvaith](https://github.com/savannahvaith)
 * **Tadas** - Software Trainer - [tvaidotas](https://github.com/tvaidotas)
 * **Jordan** - Software Trainer - [JHarry444](https://github.com/JHarry444)
-
-
