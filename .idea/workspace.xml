@@ -1,102 +1,675 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="261c9aab-9c86-4cc2-bb88-b6306721daf5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HWA/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/HWA/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringNotes/src/test/java/com/qa/AppTest.java" beforeDir="false" />
+    <list default="true" id="647e0221-7da2-412d-98f2-6ff181a7749c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/service/CardServiceIntergrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/service/CardServiceIntergrationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
-  <component name="ProjectId" id="1bRGwIDXg8Gz2qmKiYiKiPR2tuc" />
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="develop" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectId" id="1bRdV6WjDSFmqdMbnxHPqNDWR6J" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/HWA/src/test/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MTCustomThemeConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\dan\intellij-workspace\HWA\src\main\resources\static" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\dan\intellij-workspace\HWA\src\test\java" />
+      <recent name="C:\Users\dan\intellij-workspace\HWA\src\main\resources\html" />
+      <recent name="C:\Users\dan\intellij-workspace\HWA\src\main\resources\static\js" />
       <recent name="C:\Users\dan\intellij-workspace\HWA\src\main\resources" />
-      <recent name="C:\Users\dan\intellij-workspace\HWA\src\main\java\com\qa\service" />
-      <recent name="C:\Users\dan\intellij-workspace\HWA\src\main\java\com\qa\rest" />
-      <recent name="C:\Users\dan\intellij-workspace\HWA\src\main\java\com\qa\repository" />
+      <recent name="C:\Users\dan\intellij-workspace\HWA\src\main\resources\static\html" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Unnamed" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="HWA" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+  <component name="RunManager" selected="JUnit.All in HWA_DanReed (1)">
+    <configuration name="All in HWA_DanReed (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HWA_DanReed" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in HWA_DanReed (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HWA_DanReed" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in HWA_DanReed (4)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HWA_DanReed" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in HWA_DanReed (5)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HWA_DanReed" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in HWA_DanReed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HWA_DanReed" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="HWA_DanReed" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qa.App" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in HWA_DanReed (1)" />
+        <item itemvalue="JUnit.All in HWA_DanReed" />
+        <item itemvalue="JUnit.All in HWA_DanReed (5)" />
+        <item itemvalue="JUnit.All in HWA_DanReed (4)" />
+        <item itemvalue="JUnit.All in HWA_DanReed (3)" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="261c9aab-9c86-4cc2-bb88-b6306721daf5" name="Default Changelist" comment="" />
-      <created>1588587729858</created>
+      <changelist id="647e0221-7da2-412d-98f2-6ff181a7749c" name="Default Changelist" comment="" />
+      <created>1588598860096</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1588587729858</updated>
-      <workItem from="1588587737029" duration="5771000" />
+      <updated>1588598860096</updated>
+      <workItem from="1588598861299" duration="4152000" />
+      <workItem from="1588665452874" duration="15571000" />
+      <workItem from="1588751607648" duration="11284000" />
+      <workItem from="1588838027370" duration="21250000" />
+      <workItem from="1589182697308" duration="4231000" />
+      <workItem from="1589266713735" duration="4140000" />
+      <workItem from="1589275544393" duration="5889000" />
+      <workItem from="1589443418687" duration="2311000" />
+      <workItem from="1589449141868" duration="17654000" />
+      <workItem from="1589529716088" duration="7026000" />
+      <workItem from="1589626915961" duration="2436000" />
+      <workItem from="1589790646672" duration="28023000" />
+      <workItem from="1589873743624" duration="23631000" />
+      <workItem from="1589903537828" duration="19360000" />
+      <workItem from="1589960729044" duration="952000" />
+      <workItem from="1589963093895" duration="432000" />
+      <workItem from="1589963556044" duration="4973000" />
     </task>
+    <task id="LOCAL-00021" summary="added CustomersRepository functionality">
+      <created>1588757758603</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1588757758603</updated>
+    </task>
+    <task id="LOCAL-00022" summary="added CustomerService &amp; CustomerController functions">
+      <created>1588759266522</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1588759266522</updated>
+    </task>
+    <task id="LOCAL-00023" summary="added Order Classes">
+      <created>1588762543760</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1588762543760</updated>
+    </task>
+    <task id="LOCAL-00024" summary="added OrderNotFoundException functionality">
+      <created>1588762643040</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1588762643040</updated>
+    </task>
+    <task id="LOCAL-00025" summary="added OrderRepository functionality">
+      <created>1588762766664</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1588762766664</updated>
+    </task>
+    <task id="LOCAL-00026" summary="added Card Unit tests&#10;added Card Integration tests">
+      <created>1588842331922</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1588842331922</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Made card intergration tests not public">
+      <created>1588842434253</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1588842434253</updated>
+    </task>
+    <task id="LOCAL-00028" summary="added CardControllerIntegrationTest">
+      <created>1588843402354</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1588843402354</updated>
+    </task>
+    <task id="LOCAL-00029" summary="added CardControllerUnitTest">
+      <created>1588844118913</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1588844118913</updated>
+    </task>
+    <task id="LOCAL-00030" summary="made CardControllerIntegrationTest not public">
+      <created>1588844148446</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1588844148446</updated>
+    </task>
+    <task id="LOCAL-00031" summary="added BoxServiceIntegrationTest">
+      <created>1588844854372</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1588844854372</updated>
+    </task>
+    <task id="LOCAL-00032" summary="added BoxServiceUnitTest">
+      <created>1588845324706</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1588845324706</updated>
+    </task>
+    <task id="LOCAL-00033" summary="added BoxControllerUnitTest">
+      <created>1588845847826</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1588845847826</updated>
+    </task>
+    <task id="LOCAL-00034" summary="added BoxControllerIntergrationTest">
+      <created>1588846600303</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1588846600303</updated>
+    </task>
+    <task id="LOCAL-00035" summary="added CustomerServiceUnitTest">
+      <created>1588847344305</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1588847344306</updated>
+    </task>
+    <task id="LOCAL-00036" summary="added CustomerServiceIntergrationTest">
+      <created>1588847680190</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1588847680190</updated>
+    </task>
+    <task id="LOCAL-00037" summary="added CustomerControllerIntegrationTest">
+      <created>1588848038840</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1588848038840</updated>
+    </task>
+    <task id="LOCAL-00038" summary="added CustomerControllerUnitTest">
+      <created>1588848830924</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1588848830924</updated>
+    </task>
+    <task id="LOCAL-00039" summary="edited Box variables&#10;added @Ignore to DTO classes">
+      <created>1588858293152</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1588858293152</updated>
+    </task>
+    <task id="LOCAL-00040" summary="added Order class getters &amp; setters">
+      <created>1588860707785</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1588860707785</updated>
+    </task>
+    <task id="LOCAL-00041" summary="added OrderDTO class getters &amp; setters">
+      <created>1588861288486</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1588861288486</updated>
+    </task>
+    <task id="LOCAL-00042" summary="added OrderController&#10;added OrderService">
+      <created>1588862270407</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1588862270407</updated>
+    </task>
+    <task id="LOCAL-00043" summary="added Orderline class">
+      <created>1588862791935</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1588862791935</updated>
+    </task>
+    <task id="LOCAL-00044" summary="added complete Orderline functionality">
+      <created>1588863968803</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1588863968803</updated>
+    </task>
+    <task id="LOCAL-00045" summary="changed not found exceptions to the correct objects">
+      <created>1589267511390</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1589267511390</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Card seems to be working on post man&#10;changes to card Override methods&#10;changes to CardDTO&#10;commented out update methods in controller">
+      <created>1589270385293</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1589270385293</updated>
+    </task>
+    <task id="LOCAL-00047" summary="removed Ignore methods">
+      <created>1589278882648</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1589278882648</updated>
+    </task>
+    <task id="LOCAL-00048" summary="added dependency for MySql">
+      <created>1589444130947</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1589444130947</updated>
+    </task>
+    <task id="LOCAL-00049" summary="added logic for connecting to MySql database">
+      <created>1589450669507</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1589450669507</updated>
+    </task>
+    <task id="LOCAL-00050" summary="removed orderline classes">
+      <created>1589471322359</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1589471322361</updated>
+    </task>
+    <task id="LOCAL-00051" summary="changed order to orders :(">
+      <created>1589475371559</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1589475371560</updated>
+    </task>
+    <task id="LOCAL-00052" summary="removed orderline relationship">
+      <created>1589475711250</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1589475711250</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Added html pages">
+      <created>1589793152828</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1589793152829</updated>
+    </task>
+    <task id="LOCAL-00054" summary="removed redundant html pages&#10;created index page&#10;added tabs for each box&#10;implemented css and js for tab functionality">
+      <created>1589796998794</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1589796998794</updated>
+    </task>
+    <task id="LOCAL-00055" summary="first attempt at webpage">
+      <created>1589810731380</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1589810731380</updated>
+    </task>
+    <task id="LOCAL-00056" summary="simplified card class">
+      <created>1589810899376</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1589810899376</updated>
+    </task>
+    <task id="LOCAL-00057" summary="removed non needed values for card class">
+      <created>1589811004956</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1589811004956</updated>
+    </task>
+    <task id="LOCAL-00058" summary="edited tests for card">
+      <created>1589811191291</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1589811191291</updated>
+    </task>
+    <task id="LOCAL-00059" summary="simplified customer to username">
+      <created>1589814715109</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1589814715109</updated>
+    </task>
+    <task id="LOCAL-00060" summary="edited getter and setter for customer">
+      <created>1589881629462</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1589881629463</updated>
+    </task>
+    <task id="LOCAL-00061" summary="createCustomer js file working">
+      <created>1589884028384</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1589884028385</updated>
+    </task>
+    <task id="LOCAL-00062" summary="filled kaiba starter deck manually">
+      <created>1589893170795</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1589893170795</updated>
+    </task>
+    <task id="LOCAL-00063" summary="adding more API">
+      <created>1589899557300</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1589899557300</updated>
+    </task>
+    <task id="LOCAL-00064" summary="deleteCustomer API working">
+      <created>1589901029611</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1589901029611</updated>
+    </task>
+    <task id="LOCAL-00065" summary="more APIs working">
+      <created>1589906181391</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1589906181392</updated>
+    </task>
+    <task id="LOCAL-00066" summary="added unique card images">
+      <created>1589908285498</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1589908285498</updated>
+    </task>
+    <task id="LOCAL-00067" summary="organised HTML&#10;&#10;Added order tests">
+      <created>1589925974932</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1589925974932</updated>
+    </task>
+    <task id="LOCAL-00068" summary="changed gitignore">
+      <created>1589926984723</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1589926984723</updated>
+    </task>
+    <task id="LOCAL-00069" summary="changes to pom">
+      <created>1589964335624</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1589964335625</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="changed not found exceptions to the correct objects" />
+    <MESSAGE value="Card seems to be working on post man&#10;changes to card Override methods&#10;changes to CardDTO&#10;commented out update methods in controller" />
+    <MESSAGE value="removed Ignore methods" />
+    <MESSAGE value="added dependency for MySql" />
+    <MESSAGE value="added logic for connecting to MySql database" />
+    <MESSAGE value="removed orderline classes" />
+    <MESSAGE value="changed order to orders :(" />
+    <MESSAGE value="removed orderline relationship" />
+    <MESSAGE value="Added html pages" />
+    <MESSAGE value="removed redundant html pages&#10;created index page&#10;added tabs for each box&#10;implemented css and js for tab functionality" />
+    <MESSAGE value="first attempt at webpage" />
+    <MESSAGE value="simplified card class" />
+    <MESSAGE value="removed non needed values for card class" />
+    <MESSAGE value="edited tests for card" />
+    <MESSAGE value="simplified customer to username" />
+    <MESSAGE value="edited getter and setter for customer" />
+    <MESSAGE value="createCustomer js file working" />
+    <MESSAGE value="filled kaiba starter deck manually" />
+    <MESSAGE value="adding more API" />
+    <MESSAGE value="deleteCustomer API working" />
+    <MESSAGE value="more APIs working" />
+    <MESSAGE value="added unique card images" />
+    <MESSAGE value="organised HTML&#10;&#10;Added order tests" />
+    <MESSAGE value="changed gitignore" />
+    <MESSAGE value="changes to pom" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes to pom" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588598489198">
+    <state x="859" y="366" key="#Assign_Data_Sources" timestamp="1589451714475">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588598489198" />
-    <state x="689" y="310" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1588598487566">
+    <state x="859" y="366" key="#Assign_Data_Sources/0.0.1920.1040@0.0.1920.1040" timestamp="1589451714475" />
+    <state x="552" y="178" width="816" height="729" key="#Intentions" timestamp="1589267047160">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="689" y="310" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588598487566" />
-    <state x="690" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1588588616452">
+    <state x="552" y="178" width="816" height="729" key="#Intentions/0.0.1920.1040@0.0.1920.1040" timestamp="1589267047160" />
+    <state x="349" y="356" key="#SQL_Dialects" timestamp="1589812276287">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588588616452" />
-    <state x="585" y="1" key="CommitChangelistDialog2" timestamp="1588589379265">
+    <state x="349" y="356" key="#SQL_Dialects/0.0.1920.1040@0.0.1920.1040" timestamp="1589812276287" />
+    <state x="798" y="192" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589812367116">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="1" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588589379265" />
-    <state x="836" y="422" key="Github.ShareDialog" timestamp="1588593189636">
+    <state x="798" y="192" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589812367116" />
+    <state x="765" y="217" key="#com.intellij.ide.util.MemberChooser" timestamp="1589881388197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="836" y="422" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588593189636" />
-    <state x="770" y="142" key="Github.UntrackedFilesDialog" timestamp="1588593196953">
+    <state x="765" y="217" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1589881388197" />
+    <state x="550" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1589814428136">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="770" y="142" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588593196953" />
+    <state x="550" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589814428136" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589812482097">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589812482097" />
+    <state x="748" y="181" width="879" height="726" key="CommitChangelistDialog2" timestamp="1589965017376">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="748" y="181" width="879" height="726" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589965017376" />
+    <state x="347" y="110" key="DiffContextDialog" timestamp="1589926960930">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="347" y="110" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589926960930" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1589964191462">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589964191462" />
+    <state width="1877" height="266" key="GridCell.Tab.0.bottom" timestamp="1589974081025">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589974081025" />
+    <state width="1877" height="266" key="GridCell.Tab.0.center" timestamp="1589974081024">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="266" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589974081024" />
+    <state width="1877" height="266" key="GridCell.Tab.0.left" timestamp="1589974081024">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="266" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589974081024" />
+    <state width="1877" height="266" key="GridCell.Tab.0.right" timestamp="1589974081025">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589974081025" />
+    <state width="1877" height="266" key="GridCell.Tab.1.bottom" timestamp="1589964829995">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="266" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589964829995" />
+    <state width="1877" height="266" key="GridCell.Tab.1.center" timestamp="1589964829995">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="266" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589964829995" />
+    <state width="1877" height="266" key="GridCell.Tab.1.left" timestamp="1589964829995">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="266" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589964829995" />
+    <state width="1877" height="266" key="GridCell.Tab.1.right" timestamp="1589964829995">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="266" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589964829995" />
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1588862016776">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588862016776" />
+    <state x="175" y="132" width="1552" height="826" key="MergeDialog" timestamp="1589475541055">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="175" y="132" width="1552" height="826" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589475541055" />
+    <state x="840" y="386" width="870" height="532" key="MultipleFileMergeDialog" timestamp="1589475547951">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="840" y="386" width="870" height="532" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589475547951" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1589964162684">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1589964162684" />
+    <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog" timestamp="1588755735144">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588755735144" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1589964338127">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589964338127" />
+    <state x="725" y="151" key="git4idea.branch.GitSmartOperationDialog" timestamp="1589186168083">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="725" y="151" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589186168083" />
+    <state x="756" y="299" key="git4idea.merge.GitMergeDialog" timestamp="1588754833587">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="756" y="299" key="git4idea.merge.GitMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588754833587" />
+    <state width="600" height="440" key="javadoc.popup" timestamp="1589467901795">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="600" height="440" key="javadoc.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1589467901795" />
+    <state x="669" y="273" width="575" height="493" key="refactoring.ChangeSignatureDialog" timestamp="1589912601614">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="669" y="273" width="575" height="493" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589912601614" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1589897691212">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1589897691212" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1589879351487">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1589879351487" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/HWA_DanReed$CardServiceUnitTest.ic" NAME="CardServiceUnitTest Coverage Results" MODIFIED="1588841322805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.qa.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/HWA_DanReed$All_in_HWA_DanReed__4_.ic" NAME="All in HWA_DanReed (4) Coverage Results" MODIFIED="1589924636097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/HWA_DanReed$AppTest.ic" NAME="AppTest Coverage Results" MODIFIED="1588839722585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.qa.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/HWA_DanReed$All_in_HWA_DanReed__3_.ic" NAME="All in HWA_DanReed (3) Coverage Results" MODIFIED="1589926014643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/HWA_DanReed$All_in_HWA_DanReed__5_.ic" NAME="All in HWA_DanReed (5) Coverage Results" MODIFIED="1589924758837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/HWA_DanReed$All_in_HWA_DanReed.ic" NAME="All in HWA_DanReed Coverage Results" MODIFIED="1589965641092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/HWA_DanReed$All_in_HWA_DanReed__2_.ic" NAME="All in HWA_DanReed (2) Coverage Results" MODIFIED="1589924933704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/HWA_DanReed$All_in_HWA_DanReed__1_.ic" NAME="All in HWA_DanReed (1) Coverage Results" MODIFIED="1589966260884" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/HWA_DanReed$AppTest_shouldAnswerWithTrue.ic" NAME="AppTest.shouldAnswerWithTrue Coverage Results" MODIFIED="1589276024573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.qa.*</FILTER>
+    </SUITE>
   </component>
 </project>
